@@ -22,7 +22,8 @@
 			"jsxQuoteStyle": "single",
 			"quoteStyle": "single",
 			"semicolons": "asNeeded",
-			"trailingCommas": "none"
+			"trailingCommas": "none",
+
 		}
 	},
 	"linter": {
