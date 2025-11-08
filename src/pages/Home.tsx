@@ -2,6 +2,7 @@ import {useSuspenseQuery} from '@tanstack/react-query'
 import {Head} from '@/components/Head'
 
 import FullScreenFadeCarousel from '@/components/Home/FullScreenFadeCarousel'
+import PortfolioLinkSection from '@/components/Home/PortfolioLinkSection'
 export function Home() {
 	const slides = [
     {
@@ -29,9 +30,10 @@ export function Home() {
 
 	return (
 		<>
-			<Head title='Vitamin' />
+			<Head title='SS&B - Construtora' />
 			<main >
 					<FullScreenFadeCarousel  slides={slides} headerHeight="0rem"/>
+					<PortfolioLinkSection />
 			</main>
 		</>
 	)

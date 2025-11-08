@@ -53,7 +53,7 @@ export function Header() {
 	return (
 		// The header is positioned absolutely to overlay the content, as seen in the prototype
 		// It uses a slight opacity for a modern, light feel.
-		<header className='absolute top-0 left-0 right-0 z-10 bg-white bg-opacity-90 shadow-md rounded-bl-[3em] rounded-br-[3em]'>
+		<header className='absolute top-0 left-0 right-0 z-10 bg-[#E9F0F0] bg-opacity-90 shadow-md rounded-bl-[3em] rounded-br-[3em]'>
 			<div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
 				<div className='flex justify-between items-center h-18'>
 					{/* Logo */}
