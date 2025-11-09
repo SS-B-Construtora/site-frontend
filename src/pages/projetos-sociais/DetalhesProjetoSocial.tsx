@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router';
 import { Head } from '@/components/Head';
+import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 import FooterSection from '@/components/Home/FooterSection';
 import { projetosSociaisMock } from '@/mocks/projetosSociais';
 import type { ProjetoSocialItem } from '@/mocks/projetosSociais';
@@ -68,10 +69,11 @@ export function DetalhesProjetoSocial() {
 
   return (
     <>
-      <main className="pt-[72px]">
+      <SocialMediaSidebar />
+      <main className="pt-0">
         <Head title={`${projeto.title} - Projetos Sociais - SS&B Construtora`} />
         
-        <div className="relative h-96 lg:h-[500px] overflow-hidden">
+        <div className="relative h-96 lg:h-[500px] overflow-hidden -mt-[72px] pt-[72px]">
           <img
             src={projeto.image}
             alt={projeto.title}

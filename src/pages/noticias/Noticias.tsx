@@ -1,5 +1,6 @@
 import { Head } from '@/components/Head';
 import FooterSection from '@/components/Home/FooterSection';
+import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 import { newsHomeMock } from '@/mocks/newsHome';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
@@ -19,6 +20,7 @@ function Noticias() {
 
   return (
     <>
+      <SocialMediaSidebar />
       <main className="pt-[72px] min-h-screen flex flex-col bg-[#E9F0F0]">
         <Head title="Notícias - SS&B Construtora" />
 

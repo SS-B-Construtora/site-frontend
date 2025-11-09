@@ -1,5 +1,6 @@
 import { Head } from '@/components/Head';
 import FooterSection from '@/components/Home/FooterSection';
+import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 import { newsHomeMock, type NewsItem } from '@/mocks/newsHome';
 import { useSearchParams, useNavigate } from 'react-router';
 
@@ -13,9 +14,10 @@ function DetalhesNoticia() {
   if (!noticia) {
     return (
       <>
+        <SocialMediaSidebar />
         <main className="pt-[72px] min-h-screen flex flex-col bg-[#E9F0F0]">
           <Head title="Notícia não encontrada - SS&B Construtora" />
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 text-center">
             <h1 className="text-2xl font-bold text-[#3F4141] mb-4">Notícia não encontrada</h1>
             <button 
               onClick={() => navigate('/noticias')}
@@ -31,12 +33,12 @@ function DetalhesNoticia() {
 
   return (
     <>
+      <SocialMediaSidebar />
       <main className="pt-[72px] min-h-screen flex flex-col bg-[#E9F0F0]">
         <Head title={`${noticia.title} - SS&B Construtora`} />
 
         <section className="py-8 md:py-16 bg-[#E9F0F0]">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            {/* Botão Voltar */}
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <button
               onClick={() => navigate('/noticias')}
               className="mb-6 flex items-center gap-2 text-[#06A956] hover:text-[#058a47] transition-colors duration-300"

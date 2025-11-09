@@ -50,7 +50,7 @@ export default function FullScreenFadeCarousel({
       className="relative w-full overflow-hidden"
       style={
         {
-          height: '80vh',
+          height: '90vh',
           '--embla-fade-slide-opacity-transition': `opacity ${fadeDuration}ms ease`,
         } as React.CSSProperties
       }

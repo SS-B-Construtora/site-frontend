@@ -3,6 +3,7 @@ import { getObraPorId } from '@/mocks/obrasMock';
 import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 import { useState } from 'react';
 import FooterSection from '@/components/Home/FooterSection';
+import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 import { Head } from '@/components/Head';
 import Contact from '../contact/Contact';
 
@@ -43,12 +44,13 @@ const DetailsObra = () => {
 
   return (
     <>
+      <SocialMediaSidebar />
       <main className="pt-[72px]">
         <Head title="Obras - SS&B Construtora" />
         <div className="min-h-screen bg-gray-50">
           <div className="max-w-6xl mx-auto px-4 py-8">
-            <div className="bg-[#06A956] p-4 rounded-lg mb-6 shadow-lg">
-              <h1 className="text-2xl md:text-3xl font-bold text-white mb-4">
+            <div className="bg-[#06A956] px-6 py-4 rounded-lg mb-6 shadow-lg mt-10">
+              <h1 className="text-4xl md:text-4xl font-bold text-white">
                 {obra.nome}
               </h1>
             </div>
@@ -61,8 +63,14 @@ const DetailsObra = () => {
                   className="w-full h-full object-cover"
                 />
 
-                <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-white bg-opacity-90 backdrop-blur-md rounded-full px-6 py-3 shadow-lg">
+                <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-0">
+                  <div className="bg-white/70 backdrop-blur-lg px-6 py-4 shadow-lg" 
+                       style={{
+                         borderTopLeftRadius: '20px',
+                         borderTopRightRadius: '20px',
+                         borderBottomLeftRadius: '6px',
+                         borderBottomRightRadius: '6px',
+                       }}>
                     <div className="flex items-center gap-6">
                       {obra.imagens.length > 1 && (
                         <div className="flex items-center gap-4">
@@ -81,7 +89,7 @@ const DetailsObra = () => {
                                 onClick={() => setCurrentImage(index)}
                                 className={`w-2 h-2 rounded-full transition-all duration-200 ${
                                   index === currentImage
-                                    ? 'bg-[#06A956] w-6'
+                                    ? 'bg-[#06A956] w-2'
                                     : 'bg-gray-300 hover:bg-gray-400'
                                 }`}
                                 aria-label={`Ir para imagem ${index + 1}`}

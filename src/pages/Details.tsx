@@ -2,6 +2,7 @@ import {useSuspenseQuery} from '@tanstack/react-query'
 import {Link, Navigate, useParams} from 'react-router'
 import {getFruits} from '@/api/fruits'
 import {Head} from '@/components/Head'
+import SocialMediaSidebar from '@/components/SocialMediaSidebar'
 import {ImageAttribution} from '@/components/ImageAttribution'
 import {useMediaQuery} from '@/utils/useMediaQuery'
 
@@ -33,6 +34,7 @@ export function Details() {
 
 	return (
 		<>
+			<SocialMediaSidebar />
 			<Head title={fruit.name} />
 			<div className='flex min-h-screen flex-col items-center sm:flex-row'>
 				<div className='relative'>

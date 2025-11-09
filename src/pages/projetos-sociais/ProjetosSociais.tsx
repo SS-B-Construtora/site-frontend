@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 import { Head } from '@/components/Head';
+import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 import FooterSection from '@/components/Home/FooterSection';
 import { projetosSociaisMock } from '@/mocks/projetosSociais';
 
@@ -42,6 +43,7 @@ export function ProjetosSociais() {
 
   return (
     <>
+      <SocialMediaSidebar />
       <main className="pt-[72px]">
         <Head title="Projetos Sociais - SS&B Construtora" />
         

@@ -1,4 +1,5 @@
 import { Head } from '@/components/Head';
+import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 
 import trator from '@/assets/locacoes/trator.svg';
 import manipuladores from '@/assets/locacoes/manipuladores.svg';
@@ -32,6 +33,7 @@ function Locacoes() {
 
   return (
     <>
+      <SocialMediaSidebar />
       <main className="pt-[72px] min-h-screen flex flex-col bg-[#E9F0F0]">
         <Head title="Locações - SS&B Construtora" />
 

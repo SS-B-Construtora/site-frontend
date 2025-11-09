@@ -1,4 +1,5 @@
 import { Head } from '@/components/Head';
+import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 import FullScreenFadeCarousel from '@/components/Home/FullScreenFadeCarousel';
 import PortfolioLinkSection from '@/components/Home/PortfolioLinkSection';
 import NewsCarousel from '@/components/Home/NewsCarousel';
@@ -101,9 +102,10 @@ export function Home() {
 
   return (
     <>
+      <SocialMediaSidebar />
       <Head title="SS&B - Construtora" />
-      <main className="pt-[72px]">
-        <FullScreenFadeCarousel slides={slides} headerHeight="0rem" />
+      <main>
+        <FullScreenFadeCarousel slides={slides} />
         <PortfolioLinkSection />
         <NewsCarousel />
         <ContactSection />

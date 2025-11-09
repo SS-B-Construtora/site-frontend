@@ -113,6 +113,7 @@ const NavItem = ({ name, href, dropdown, options }: NavItemProps) => {
 
 export function Header() {
   const navigate = useNavigate();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#E9F0F0] bg-opacity-95 backdrop-blur-sm shadow-md rounded-bl-[3em] rounded-br-[3em]">
@@ -137,11 +138,12 @@ export function Header() {
             </div>
           </nav>
 
-          {/* Mobile Menu Button (Placeholder for responsiveness) */}
+          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               aria-controls="mobile-menu"
-              aria-expanded="false"
+              aria-expanded={isMobileMenuOpen}
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500"
               type="button"
             >
@@ -156,7 +158,7 @@ export function Header() {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M4 6h16M4 12h16M4 18h16"
+                  d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
@@ -165,6 +167,55 @@ export function Header() {
             </button>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden" id="mobile-menu">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-[#E9F0F0] rounded-b-[2em]">
+              {navLinks.map((link) => (
+                <div key={link.name}>
+                  {link.dropdown && link.options ? (
+                    <div className="space-y-1">
+                      <div className="text-gray-700 px-3 py-2 text-sm font-medium">
+                        {link.name}
+                      </div>
+                      {link.options.map((option, index) => (
+                        <button
+                          key={index}
+                          onClick={() => {
+                            setIsMobileMenuOpen(false);
+                            if (option.href.startsWith('/')) {
+                              navigate(option.href);
+                            } else {
+                              window.location.href = option.href;
+                            }
+                          }}
+                          className="block w-full text-left text-gray-600 hover:text-green-600 px-6 py-2 text-sm"
+                        >
+                          {option.name}
+                        </button>
+                      ))}
+                    </div>
+                  ) : (
+                    <button
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        if (link.href.startsWith('/')) {
+                          navigate(link.href);
+                        } else {
+                          window.location.href = link.href;
+                        }
+                      }}
+                      className="block w-full text-left text-gray-700 hover:text-green-600 px-3 py-2 text-sm font-medium"
+                    >
+                      {link.name}
+                    </button>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </header>
   );
