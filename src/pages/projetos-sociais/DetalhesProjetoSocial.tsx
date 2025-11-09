@@ -3,7 +3,7 @@ import { useSearchParams, useNavigate } from 'react-router';
 import { Head } from '@/components/Head';
 import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 import FooterSection from '@/components/Home/FooterSection';
-import { projetosSociaisMock } from '@/mocks/projetosSociais';
+import { projetosSociaisMock, formatDate } from '@/mocks/projetosSociais';
 import type { ProjetoSocialItem } from '@/mocks/projetosSociais';
 
 export function DetalhesProjetoSocial() {
@@ -24,15 +24,6 @@ export function DetalhesProjetoSocial() {
       }
     }
   }, [slug]);
-
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('pt-BR', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
-  };
 
   const getStatusColor = (status: string) => {
     switch (status) {
@@ -158,7 +149,13 @@ export function DetalhesProjetoSocial() {
               
               <div className="text-center">
                 <div className="text-3xl lg:text-4xl font-bold text-[#06A956] mb-2">
-                  {new Date().getFullYear() - new Date(projeto.startDate).getFullYear() || '< 1'}
+                  {(() => {
+                    const startDate = typeof projeto.startDate === 'number' 
+                      ? new Date(projeto.startDate) 
+                      : new Date(projeto.startDate);
+                    const yearsDiff = new Date().getFullYear() - startDate.getFullYear();
+                    return yearsDiff || '< 1';
+                  })()}
                 </div>
                 <div className="text-sm lg:text-base text-[#3F4141] font-medium">
                   Anos de Atuação

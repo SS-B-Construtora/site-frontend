@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router';
 import { Head } from '@/components/Head';
 import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 import FooterSection from '@/components/Home/FooterSection';
-import { projetosSociaisMock } from '@/mocks/projetosSociais';
+import { projetosSociaisMock, formatDate } from '@/mocks/projetosSociais';
 
 export function ProjetosSociais() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -17,15 +17,6 @@ export function ProjetosSociais() {
 
   const handleProjetoClick = (slug: string) => {
     navigate(`/projetos-sociais/detalhes?slug=${slug}`);
-  };
-
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('pt-BR', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
-    });
   };
 
   const getStatusColor = (status: string) => {

@@ -1,7 +1,7 @@
 import { Head } from '@/components/Head';
 import FooterSection from '@/components/Home/FooterSection';
 import SocialMediaSidebar from '@/components/SocialMediaSidebar';
-import { newsHomeMock } from '@/mocks/newsHome';
+import { newsHomeMock, formatDate } from '@/mocks/newsHome';
 import { useState } from 'react';
 import { useNavigate } from 'react-router';
 
@@ -53,7 +53,7 @@ function Noticias() {
                               {item.category}
                             </span>
                             <span className="text-[#3F4141]/60 text-sm">
-                              {item.publishedAt}
+                              {formatDate(item.publishedAt)}
                             </span>
                           </div>
 

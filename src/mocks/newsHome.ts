@@ -1,6 +1,7 @@
 import noticia1 from '@/assets/news/noticia1.svg';
 import noticia2 from '@/assets/news/noticia2.svg';
 import noticia3 from '@/assets/news/noticia3.svg';
+import { formatDate } from '@/utils/dateUtils';
 
 export interface NewsItem {
   id: string;
@@ -8,11 +9,14 @@ export interface NewsItem {
   description: string;
   content: string;
   image: string;
-  publishedAt: string;
+  publishedAt: string; 
   author: string;
   category: string;
   slug: string;
 }
+
+export { formatDate };
+
 
 export const newsHomeMock: NewsItem[] = [
   {
@@ -32,7 +36,7 @@ export const newsHomeMock: NewsItem[] = [
       <p>Além dos benefícios ambientais, o parque eólico trará importantes impactos socioeconômicos para a comunidade local, incluindo geração de empregos permanentes para operação e manutenção, além de royalties para o município que contribuirão para melhorias na infraestrutura e serviços públicos.</p>
     `,
     image: noticia1,
-    publishedAt: '2024-11-01',
+    publishedAt: '2024-11-01T00:00:00.000000Z', 
     author: 'Equipe SS&B',
     category: 'Energia Eólica',
     slug: 'novo-parque-eolico-ceara',
@@ -54,7 +58,7 @@ export const newsHomeMock: NewsItem[] = [
       <p>"Esta obra representa nossa expertise em projetos rodoviários complexos e reafirma nosso papel fundamental no desenvolvimento da infraestrutura cearense", destacou o diretor de operações da empresa. O investimento total foi de R$ 45 milhões, recursos provenientes de parceria entre governo estadual e federal.</p>
     `,
     image: noticia2,
-    publishedAt: '2024-10-28',
+    publishedAt: '2024-10-28T00:00:00.000000Z',
     author: 'Departamento de Engenharia',
     category: 'Obras Rodoviárias',
     slug: 'conclusao-obra-ce040',
@@ -76,12 +80,12 @@ export const newsHomeMock: NewsItem[] = [
       <p>Para 2025, o programa será expandido para incluir cursos de soldador, operador de máquinas pesadas e técnico em segurança do trabalho, com meta de formar mais 200 jovens. A empresa investiu R$ 2,5 milhões nesta primeira fase do projeto, recursos que incluem equipamentos, material didático e bolsas de estudo.</p>
     `,
     image: noticia3,
-    publishedAt: '2024-10-25',
+    publishedAt: '2024-10-25T00:00:00.000000Z',
     author: 'Setor de Responsabilidade Social',
     category: 'Projetos Sociais',
     slug: 'projeto-social-capacitacao',
   },
-  {
+   {
     id: '3',
     title: 'Projeto social beneficia comunidades locais',
     description:
@@ -98,12 +102,12 @@ export const newsHomeMock: NewsItem[] = [
       <p>Para 2025, o programa será expandido para incluir cursos de soldador, operador de máquinas pesadas e técnico em segurança do trabalho, com meta de formar mais 200 jovens. A empresa investiu R$ 2,5 milhões nesta primeira fase do projeto, recursos que incluem equipamentos, material didático e bolsas de estudo.</p>
     `,
     image: noticia3,
-    publishedAt: '2024-10-25',
+    publishedAt: '2024-10-25T00:00:00.000000Z',
     author: 'Setor de Responsabilidade Social',
     category: 'Projetos Sociais',
     slug: 'projeto-social-capacitacao',
   },
-  {
+   {
     id: '3',
     title: 'Projeto social beneficia comunidades locais',
     description:
@@ -120,12 +124,12 @@ export const newsHomeMock: NewsItem[] = [
       <p>Para 2025, o programa será expandido para incluir cursos de soldador, operador de máquinas pesadas e técnico em segurança do trabalho, com meta de formar mais 200 jovens. A empresa investiu R$ 2,5 milhões nesta primeira fase do projeto, recursos que incluem equipamentos, material didático e bolsas de estudo.</p>
     `,
     image: noticia3,
-    publishedAt: '2024-10-25',
+    publishedAt: '2024-10-25T00:00:00.000000Z',
     author: 'Setor de Responsabilidade Social',
     category: 'Projetos Sociais',
     slug: 'projeto-social-capacitacao',
   },
-  {
+   {
     id: '3',
     title: 'Projeto social beneficia comunidades locais',
     description:
@@ -142,29 +146,7 @@ export const newsHomeMock: NewsItem[] = [
       <p>Para 2025, o programa será expandido para incluir cursos de soldador, operador de máquinas pesadas e técnico em segurança do trabalho, com meta de formar mais 200 jovens. A empresa investiu R$ 2,5 milhões nesta primeira fase do projeto, recursos que incluem equipamentos, material didático e bolsas de estudo.</p>
     `,
     image: noticia3,
-    publishedAt: '2024-10-25',
-    author: 'Setor de Responsabilidade Social',
-    category: 'Projetos Sociais',
-    slug: 'projeto-social-capacitacao',
-  },
-  {
-    id: '3',
-    title: 'Projeto social beneficia comunidades locais',
-    description:
-      'Iniciativa de capacitação profissional em parceria com escolas técnicas forma nova geração de trabalhadores especializados em construção.',
-    content: `
-      <p>A SS&B Construtora lançou um ambicioso programa de responsabilidade social voltado para capacitação profissional de jovens em situação de vulnerabilidade social, estabelecendo parcerias estratégicas com instituições de ensino técnico da região.</p>
-      
-      <p>O programa "Construindo Futuros" já formou sua primeira turma de 120 jovens em cursos de pedreiro, eletricista predial, encanador e auxiliar de obras. Todos os participantes receberam certificação reconhecida pelo Sistema Nacional de Aprendizagem Industrial (SENAI) e tiveram acesso a estágio remunerado em nossas obras.</p>
-      
-      <p>A iniciativa vai além da capacitação técnica, oferecendo também módulos de desenvolvimento pessoal, educação financeira e empreendedorismo. "Nosso objetivo é formar não apenas profissionais competentes, mas cidadãos preparados para o mercado de trabalho e a vida", explicou a coordenadora do programa.</p>
-      
-      <p>Das 120 pessoas formadas na primeira turma, 85% foram efetivadas em empresas parceiras ou na própria SS&B Construtora. Este índice de empregabilidade demonstra a qualidade da formação oferecida e a demanda do mercado por profissionais qualificados no setor de construção civil.</p>
-      
-      <p>Para 2025, o programa será expandido para incluir cursos de soldador, operador de máquinas pesadas e técnico em segurança do trabalho, com meta de formar mais 200 jovens. A empresa investiu R$ 2,5 milhões nesta primeira fase do projeto, recursos que incluem equipamentos, material didático e bolsas de estudo.</p>
-    `,
-    image: noticia3,
-    publishedAt: '2024-10-25',
+    publishedAt: '2024-10-25T00:00:00.000000Z',
     author: 'Setor de Responsabilidade Social',
     category: 'Projetos Sociais',
     slug: 'projeto-social-capacitacao',
@@ -173,10 +155,11 @@ export const newsHomeMock: NewsItem[] = [
 
 export const getLatestNews = (limit: number = 4): NewsItem[] => {
   return newsHomeMock
-    .sort(
-      (a, b) =>
-        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
-    )
+    .sort((a, b) => {
+      const dateA = new Date(a.publishedAt).getTime();
+      const dateB = new Date(b.publishedAt).getTime();
+      return dateB - dateA;
+    })
     .slice(0, limit);
 };
 

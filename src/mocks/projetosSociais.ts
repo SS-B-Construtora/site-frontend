@@ -1,8 +1,7 @@
-// Importando imagens dos projetos sociais
-// Por enquanto usando imagens genéricas até termos as específicas
 import projeto1 from '@/assets/news/noticia1.svg';
 import projeto2 from '@/assets/news/noticia2.svg';
 import projeto3 from '@/assets/news/noticia3.svg';
+import { formatDate } from '@/utils/dateUtils';
 
 export interface ProjetoSocialItem {
   id: string;
@@ -10,13 +9,15 @@ export interface ProjetoSocialItem {
   description: string;
   content: string;
   image: string;
-  startDate: string;
+  startDate: string; 
   location: string;
   status: 'Em andamento' | 'Concluído' | 'Planejado';
   beneficiados: number;
   categoria: string;
   slug: string;
 }
+
+export { formatDate };
 
 export const projetosSociaisMock: ProjetoSocialItem[] = [
   {
@@ -35,7 +36,7 @@ export const projetosSociaisMock: ProjetoSocialItem[] = [
       <p>O programa também oferece bolsa-auxílio durante o período de formação, material didático gratuito e certificação reconhecida pelo mercado. Nossa meta é expandir o projeto para outras regiões do Ceará nos próximos anos.</p>
     `,
     image: projeto1,
-    startDate: "2023-03-15",
+    startDate: '2023-03-15T10:00:00.000000Z', 
     location: "Fortaleza, CE",
     status: "Em andamento",
     beneficiados: 150,
@@ -58,7 +59,7 @@ export const projetosSociaisMock: ProjetoSocialItem[] = [
       <p>Além das reformas estruturais, também fornecemos mobiliário escolar novo, equipamentos de informática e material pedagógico. O projeto conta com o apoio das secretarias municipais de educação e acompanhamento contínuo dos resultados.</p>
     `,
     image: projeto2,
-    startDate: "2022-08-01",
+    startDate: '2022-08-01T08:00:00.000000Z', 
     location: "Interior do Ceará",
     status: "Em andamento",
     beneficiados: 3500,
@@ -81,7 +82,7 @@ export const projetosSociaisMock: ProjetoSocialItem[] = [
       <p>O impacto do projeto vai além do acesso à água, proporcionando melhoria na qualidade de vida, redução de doenças relacionadas ao consumo de água imprópria e fortalecimento da permanência das famílias no campo.</p>
     `,
     image: projeto3,
-    startDate: "2023-01-10",
+    startDate: '2023-01-10T12:00:00.000000Z', 
     location: "Semiárido Cearense",
     status: "Em andamento",
     beneficiados: 400,
@@ -104,7 +105,7 @@ export const projetosSociaisMock: ProjetoSocialItem[] = [
       <p>A iniciativa conta com parcerias locais, incluindo igrejas, associações comunitárias e órgãos públicos municipais, que ajudam na identificação das famílias em maior necessidade e no acompanhamento do desenvolvimento dos projetos.</p>
     `,
     image: projeto1,
-    startDate: "2022-01-01",
+    startDate: '2022-01-01T00:00:00.000000Z', 
     location: "Todo o Ceará",
     status: "Em andamento",
     beneficiados: 200,
@@ -127,7 +128,7 @@ export const projetosSociaisMock: ProjetoSocialItem[] = [
       <p>A iniciativa contribui para a melhoria da qualidade do ar, conservação do solo, proteção de recursos hídricos e criação de corredores ecológicos. Também promove maior conscientização ambiental entre funcionários da empresa e comunidades envolvidas.</p>
     `,
     image: projeto2,
-    startDate: "2023-06-01",
+    startDate: '2023-06-01T09:00:00.000000Z', 
     location: "Região Metropolitana de Fortaleza",
     status: "Em andamento",
     beneficiados: 1000,
@@ -150,7 +151,7 @@ export const projetosSociaisMock: ProjetoSocialItem[] = [
       <p>Além do empréstimo de livros, o projeto oferece oficinas de criação literária, concursos de redação e pequenas apresentações teatrais. Também mantemos um programa de doação de livros para formação de pequenas bibliotecas comunitárias permanentes.</p>
     `,
     image: projeto3,
-    startDate: "2023-09-01",
+    startDate: '2023-09-01T14:00:00.000000Z',
     location: "Interior do Ceará",
     status: "Em andamento",
     beneficiados: 800,
@@ -173,7 +174,7 @@ export const projetosSociaisMock: ProjetoSocialItem[] = [
       <p>Além das aulas de informática, oferecemos orientação sobre segurança digital, prevenção de golpes virtuais e uso responsável das redes sociais. O programa conta com material didático adaptado e suporte técnico contínuo após a formatura.</p>
     `,
     image: projeto1,
-    startDate: "2024-02-01",
+    startDate: '2024-02-01T11:00:00.000000Z', 
     location: "Fortaleza e Região Metropolitana",
     status: "Em andamento",
     beneficiados: 120,
@@ -196,7 +197,7 @@ export const projetosSociaisMock: ProjetoSocialItem[] = [
       <p>As hortas também se tornaram espaços de convivência e integração comunitária, onde são realizadas oficinas de educação nutricional, culinária saudável e preservação ambiental, fortalecendo os laços sociais entre os participantes.</p>
     `,
     image: projeto2,
-    startDate: "2023-04-01",
+    startDate: '2023-04-01T13:30:00.000000Z', 
     location: "Periferia de Fortaleza",
     status: "Em andamento",
     beneficiados: 180,
@@ -206,9 +207,11 @@ export const projetosSociaisMock: ProjetoSocialItem[] = [
 ];
 
 export const getProjetosSociais = () => {
-  return projetosSociaisMock.sort((a, b) => 
-    new Date(b.startDate).getTime() - new Date(a.startDate).getTime()
-  );
+  return projetosSociaisMock.sort((a, b) => {
+    const dateA = new Date(a.startDate).getTime();
+    const dateB = new Date(b.startDate).getTime();
+    return dateB - dateA;
+  });
 };
 
 export const getProjetoSocialBySlug = (slug: string) => {

@@ -1,7 +1,7 @@
 import { Head } from '@/components/Head';
 import FooterSection from '@/components/Home/FooterSection';
 import SocialMediaSidebar from '@/components/SocialMediaSidebar';
-import { newsHomeMock, type NewsItem } from '@/mocks/newsHome';
+import { newsHomeMock, formatDate, type NewsItem } from '@/mocks/newsHome';
 import { useSearchParams, useNavigate } from 'react-router';
 
 function DetalhesNoticia() {
@@ -76,7 +76,7 @@ function DetalhesNoticia() {
                     {noticia.category}
                   </span>
                   <span className="text-[#3F4141]/60 text-sm">
-                    {noticia.publishedAt}
+                    {formatDate(noticia.publishedAt)}
                   </span>
                   <span className="text-[#3F4141]/60 text-sm">
                     Por: {noticia.author}
