@@ -119,7 +119,6 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#E9F0F0] bg-opacity-95 backdrop-blur-sm shadow-md rounded-bl-[3em] rounded-br-[3em]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-22">
-          {/* Logo */}
           <div
             className="flex-shrink-0 py-2"
             onClick={() => {
@@ -129,7 +128,6 @@ export function Header() {
             <Logo />
           </div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:block">
             <div className="flex space-x-8">
               {navLinks.map((link) => (
@@ -138,7 +136,6 @@ export function Header() {
             </div>
           </nav>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button
               aria-controls="mobile-menu"
@@ -148,7 +145,6 @@ export function Header() {
               type="button"
             >
               <span className="sr-only">Open main menu</span>
-              {/* Hamburger Icon */}
               <svg
                 aria-hidden="true"
                 className="block h-6 w-6"
@@ -168,7 +164,6 @@ export function Header() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden" id="mobile-menu">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-[#E9F0F0] rounded-b-[2em]">

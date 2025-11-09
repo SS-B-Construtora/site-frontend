@@ -38,7 +38,6 @@ export function ProjetosSociais() {
       <main className="pt-[72px]">
         <Head title="Projetos Sociais - SS&B Construtora" />
         
-        {/* Header */}
         <div
           style={{
             background: 'linear-gradient(124.1deg, #3F4141 -8.3%, #02351B 101.42%)',

@@ -65,7 +65,6 @@ function Obras() {
                   }}
                 ></div>
 
-                {/* Versão desktop */}
                 <div
                   className="absolute inset-0 border border-gray-300 rounded-lg shadow-md ml-4 hidden sm:block"
                   style={{
@@ -79,7 +78,6 @@ function Obras() {
                   }}
                 ></div>
 
-                {/* Borda do buraco - Mobile */}
                 <div 
                   className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 sm:hidden"
                   style={{
@@ -91,7 +89,6 @@ function Obras() {
                   }}
                 ></div>
 
-                {/* Borda do buraco - Desktop */}
                 <div 
                   className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 hidden sm:block"
                   style={{
