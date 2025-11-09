@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { newsHomeMock, getLatestNews } from '@/mocks/newsHome';
+import { getLatestNews } from '@/mocks/newsHome';
 import type { NewsItem } from '@/mocks/newsHome';
 import { useNavigate } from 'react-router';
 
