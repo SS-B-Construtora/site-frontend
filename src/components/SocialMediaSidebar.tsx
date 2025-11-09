@@ -10,7 +10,7 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   {
     name: 'Instagram',
-    url: 'https://instagram.com',
+    url: 'https://www.instagram.com/ssbconstrutora/',
     bgColor: '#B5BBBB',
     icon: (
       <svg
@@ -29,7 +29,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: 'LinkedIn',
-    url: 'https://linkedin.com',
+    url: 'https://www.linkedin.com/company/ss-b-construtora/',
     bgColor: '#B5BBBB',
     icon: (
       <svg
@@ -48,7 +48,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: 'Facebook',
-    url: 'https://facebook.com',
+    url: 'https://www.facebook.com/ssbconstrutora',
     bgColor: '#B5BBBB',
     icon: (
       <svg
@@ -67,7 +67,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: 'YouTube',
-    url: 'https://youtube.com',
+    url: 'https://www.youtube.com/channel/UC64MvEiklcFTQU5mSUdWpVg',
     bgColor: '#B5BBBB',
     icon: (
       <svg
