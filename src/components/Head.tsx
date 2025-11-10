@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router';
 
 const Logo = () => (
   <div className="flex flex-col items-center cursor-pointer">
-    <img className="h-[3rem]" src="/logo.png"" />
+    <img className="h-[3rem]" src="/logo.png" />
   </div>
 );
 
