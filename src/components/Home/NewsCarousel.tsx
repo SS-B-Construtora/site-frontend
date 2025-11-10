@@ -51,7 +51,7 @@ function NewsCarousel() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-8 max-w-8xl flex flex-row items-center justify-between gap-2">
-          <h2 className="text-3xl font-bold text-white mt-4 leading-none flex-shrink-0">
+          <h2 className="text-3xl font-bold text-white mt-4 leading-none flex-shrink-0 ml-5">
             Veja nossas últimas notícias!
           </h2>
 
@@ -94,7 +94,7 @@ function NewsCarousel() {
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-green-900/30 transition-all duration-300"></div>
 
                   <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                    <h3 className="font-semibold text-sm mb-2 line-clamp-2">
+                    <h3 className="font-bold text-lg mb-2 line-clamp-2">
                       {item.title}
                     </h3>
                     <button className="rounded-full w-full text-gray-300 border border-white  mb-2 rounded-md mt-4 hover:text-white hover:bg-[#A1C737] transition-colors duration-200 font-bold">

@@ -71,8 +71,8 @@ export default function FullScreenFadeCarousel({
 
             <div className="absolute inset-0 flex flex-col justify-between px-6 md:px-16 text-white py-8 md:py-16">
               <div className="flex-1 flex flex-col justify-center">
-                <div className="text-left max-w-3xl ml-0 md:ml-6 lg:ml-70">
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl font-bold leading-tight mb-2 sm:mb-4 md:mb-6 drop-shadow-lg">
+                <div className="text-left max-w-3xl ml-0 md:ml-6 lg:ml-60">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-7xl font-bold leading-tight mb-2 sm:mb-4 md:mb-6 drop-shadow-lg">
                     {slide.title}
                   </h2>
                   {slide.subtitle && (
@@ -84,7 +84,7 @@ export default function FullScreenFadeCarousel({
               </div>
               
               <div className="flex-shrink-0 pb-4 md:pb-8">
-                <div className="ml-0 md:ml-6 lg:ml-70">
+                <div className="ml-0 md:ml-6 lg:ml-60">
                   {slides[selectedIndex] && (slides[selectedIndex].buttonText || slides[selectedIndex].secondButtonText) && (
                     <div className="flex flex-row gap-2 sm:gap-3 md:gap-3 mb-4 sm:mb-0">
                       {slides[selectedIndex].buttonText && (
@@ -119,7 +119,7 @@ export default function FullScreenFadeCarousel({
               key={i}
               onClick={() => emblaApi?.scrollTo(i)}
               className={clsx(
-                'h-2 w-2 sm:h-3 sm:w-3 rounded-full transition-all duration-300',
+                'h-2 w-2 sm:h-3 sm:w-3 rounded-md transition-all duration-300',
                 i === selectedIndex
                   ? 'bg-green-500 w-3 sm:w-4'
                   : 'bg-white/70 hover:bg-white',
@@ -130,7 +130,7 @@ export default function FullScreenFadeCarousel({
 
         <button
           onClick={() => emblaApi?.scrollNext()}
-          className="border-2 border-white rounded-full w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors duration-200"
+          className="border-2 border-white rounded-md w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors duration-200"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

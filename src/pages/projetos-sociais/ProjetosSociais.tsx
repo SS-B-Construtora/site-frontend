@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import { Head } from '@/components/Head';
 import SocialMediaSidebar from '@/components/SocialMediaSidebar';
@@ -18,6 +18,21 @@ export function ProjetosSociais() {
   const handleProjetoClick = (slug: string) => {
     navigate(`/projetos-sociais/detalhes?slug=${slug}`);
   };
+
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+    window.scrollTo({ 
+      top: 0, 
+      behavior: 'smooth' 
+    });
+    setTimeout(() => {
+      document.documentElement.scrollTop = 0;
+    }, 100);
+  };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentPage]);
 
   const getStatusColor = (status: string) => {
     switch (status) {
@@ -137,7 +152,7 @@ export function ProjetosSociais() {
             {totalPages > 1 && (
               <div className="flex justify-center items-center gap-4 mt-12">
                 <button
-                  onClick={() => setCurrentPage(Math.max(1, currentPage - 1))}
+                  onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
                   disabled={currentPage === 1}
                   className="px-4 py-2 bg-white border border-gray-300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors duration-200"
                 >
@@ -148,7 +163,7 @@ export function ProjetosSociais() {
                   {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
                     <button
                       key={page}
-                      onClick={() => setCurrentPage(page)}
+                      onClick={() => handlePageChange(page)}
                       className={`px-4 py-2 rounded-lg transition-colors duration-200 ${
                         currentPage === page
                           ? 'bg-[#06A956] text-white'
@@ -161,7 +176,7 @@ export function ProjetosSociais() {
                 </div>
 
                 <button
-                  onClick={() => setCurrentPage(Math.min(totalPages, currentPage + 1))}
+                  onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
                   disabled={currentPage === totalPages}
                   className="px-4 py-2 bg-white border border-gray-300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors duration-200"
                 >

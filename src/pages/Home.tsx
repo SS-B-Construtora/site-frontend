@@ -17,17 +17,18 @@ export function Home() {
     {
       image: imagem1,
       title: (
-        <>
-          Construindo <br /> mais que <br />
-          <span className="text-[#00FF7D]">Estruturas</span>
-        </>
+        <span style={{ lineHeight: '1', display: 'block' }}>
+          <span className="text-[#00FF7D] block mb-1">Construindo</span>
+          <span className="text-white block mb-1">mais que</span>
+          <span className="text-[#00FF7D] block">Estruturas</span>
+        </span>
       ),
       subtitle: (
-        <>
+        <span style={{ lineHeight: '0.9' }} className='font-bold'>
           Compromisso social
           <br />
           em cada projeto
-        </>
+        </span>
       ),
       buttonText: 'CONHECA NOSSOS PROJETOS SOCIAIS',
       buttonLink: '#projetos',
@@ -35,17 +36,15 @@ export function Home() {
     {
       image: imagem2,
       title: (
-        <>
-          <span className="text-white">
-            Ventos que <br />{' '}
-          </span>
-          <span className="text-[#00FF7D]">Transformam</span>
-        </>
+        <span style={{ lineHeight: '1', display: 'block' }}>
+          <span className="text-white block mb-1">Ventos que</span>
+          <span className="text-[#00FF7D] block">Transformam</span>
+        </span>
       ),
       subtitle: (
-        <>
+        <span style={{ lineHeight: '0.9' }} className='font-bold'>
           Sustentabilidade <br /> em movimento
-        </>
+        </span>
       ),
       buttonText: 'QUERO CONHECER',
       buttonLink: '#sobre',
@@ -53,19 +52,18 @@ export function Home() {
     {
       image: imagem3,
       title: (
-        <>
-          Construindo o <br />
-          <span className="text-[#00FF7D]">Futuro Industrial</span>
-        </>
+        <span style={{ lineHeight: '1', display: 'block' }}>
+          <span className="text-white block mb-1">Construindo o</span>
+          <span className="text-[#00FF7D] block">Futuro Industrial</span>
+        </span>
       ),
       subtitle: (
-        <>
+        <span style={{ lineHeight: '0.9' }} className='font-bold'>
           Aplicando expertise e dedicação em <br /> cada etapa dos nossos
           projetos de <br />
           Parques Industriais
-        </>
+        </span>
       ),
-
       buttonText: 'QUERO CONHECER',
       buttonLink: '#portfolio',
       secondButtonText: 'VEJA NOSSO CATALOGO',
@@ -74,11 +72,16 @@ export function Home() {
     {
       image: imagem4,
       title: (
-        <>
-          Transformando <br /> <span className="text-[#00FF7D]">Paisagens</span>
-        </>
+        <span style={{ lineHeight: '1', display: 'block' }}>
+          <span className="text-white block mb-1">Transformando</span>
+          <span className="text-[#00FF7D] block">Paisagens</span>
+        </span>
       ),
-      subtitle: (<>Conheça nossa experiência <br /> em Terraplanagem</>),
+      subtitle: (
+        <span style={{ lineHeight: '0.9' }} className='font-bold'>
+          Conheça nossa experiência <br /> em Terraplanagem
+        </span>
+      ),
       buttonText: 'QUERO CONHECER',
       buttonLink: '#portfolio',
       secondButtonText: 'VEJA NOSSO CATALOGO',
@@ -87,12 +90,17 @@ export function Home() {
     {
       image: imagem5,
       title: (
-        <>
-          Caminhos que <br /> conduzem ao{' '} <br />
-          <span className="text-[#00FF7D]">progresso</span>
-        </>
+        <span style={{ lineHeight: '1', display: 'block' }}>
+          <span className="text-white block mb-1">Caminhos que</span>
+          <span className="text-white block">Conduzem ao</span>
+          <span className="text-[#00FF7D] block">Futuro Industrial</span>
+        </span>
       ),
-      subtitle: (<>Experiência e qualidade na construção <br /> de Obras Rodoviárias</>),
+      subtitle: (
+        <span style={{ lineHeight: '0.9' }} className='font-bold'>
+          Experiência e qualidade na construção <br /> de Obras Rodoviárias
+        </span>
+      ),
       buttonText: 'QUERO CONHECER',
       buttonLink: '#portfolio',
       secondButtonText: 'VEJA NOSSO CATALOGO',

@@ -53,15 +53,15 @@ function Obras() {
             {obrasMockData.map((item) => (
               <div key={item.id} className="relative">
                 <div
-                  className="absolute inset-0 border border-gray-300 rounded-lg shadow-md ml-3 sm:hidden"
+                  className="absolute inset-0 border border-gray-300 rounded-lg shadow-md ml-4 sm:hidden"
                   style={{
                     backgroundImage: `url(${bgObras})`,
-                    backgroundSize: 'cover',
+                    backgroundSize: '500%',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                     filter: 'blur(2px)',
-                    maskImage: 'radial-gradient(circle 24px at 24px 50%, transparent 24px, black 28px)',
-                    WebkitMaskImage: 'radial-gradient(circle 24px at 24px 50%, transparent 24px, black 28px)',
+                    maskImage: 'radial-gradient(circle 32px at 22px 50%, transparent 60px, black 36px)',
+                    WebkitMaskImage: 'radial-gradient(circle 32px at 22px 50%, transparent 60px, black 36px)',
                   }}
                 ></div>
 
@@ -69,43 +69,43 @@ function Obras() {
                   className="absolute inset-0 border border-gray-300 rounded-lg shadow-md ml-4 hidden sm:block"
                   style={{
                     backgroundImage: `url(${bgObras})`,
-                    backgroundSize: 'cover',
+                    backgroundSize: '500%',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
                     filter: 'blur(2px)',
-                    maskImage: 'radial-gradient(circle 32px at 32px 50%, transparent 32px, black 36px)',
-                    WebkitMaskImage: 'radial-gradient(circle 32px at 32px 50%, transparent 32px, black 36px)',
+                    maskImage: 'radial-gradient(circle 32px at 22px 50%, transparent 60px, black 36px)',
+                    WebkitMaskImage: 'radial-gradient(circle 32px at 22px 50%, transparent 60px, black 36px)',
                   }}
                 ></div>
 
                 <div 
                   className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 sm:hidden"
                   style={{
-                    width: '52px',
-                    height: '52px',
-                    borderRadius: '50%',
-                    border: '3px solid white',
-                    boxShadow: 'inset 0 0 8px rgba(0,0,0,0.3)',
-                  }}
-                ></div>
-
-                <div 
-                  className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 hidden sm:block"
-                  style={{
-                    width: '68px',
-                    height: '68px',
+                    width: '48px',
+                    height: '48px',
                     borderRadius: '50%',
                     border: '4px solid white',
                     boxShadow: 'inset 0 0 10px rgba(0,0,0,0.3)',
                   }}
                 ></div>
 
-                <div className="relative z-10 p-4 pl-6 ml-3 sm:p-6 sm:pl-8 sm:ml-4 flex flex-col items-center text-center">
-                  <h2 className="text-xl font-bold text-white mb-4 drop-shadow-md">
+                <div 
+                  className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 hidden sm:block"
+                  style={{
+                    width: '48px',
+                    height: '48px',
+                    borderRadius: '50%',
+                    border: '4px solid white',
+                    boxShadow: 'inset 0 0 10px rgba(0,0,0,0.3)',
+                  }}
+                ></div>
+
+                <div className="relative z-10 p-8 pl-12 ml-4 sm:p-8 sm:pl-12 sm:ml-4 flex flex-col items-center text-center min-h-[350px] sm:min-h-[350px]">
+                  <h2 className="text-xl sm:text-xl font-bold text-white mb-4 sm:mb-4 drop-shadow-md">
                     {item.category}
                   </h2>
                   <div
-                    className="space-y-2 px-3 py-3 rounded-lg shadow-sm w-full max-w-xs"
+                    className="space-y-3 px-4 py-4 rounded-lg shadow-sm w-full max-w-sm ml-12"
                     style={{
                       backdropFilter: 'blur(20px)',
                       backgroundColor: '#E9F0F0',
@@ -128,11 +128,11 @@ function Obras() {
                   </div>
                 </div>
 
-                <div className="absolute left-0 top-1/2 transform -translate-y-1/2 z-20">
+                <div className="absolute -left-10 top-1/2 transform -translate-y-1/2 z-20 ">
                   <img
                     src={item.icon}
                     alt={item.category}
-                    className="w-12 h-12 sm:w-16 sm:h-16 rounded-full object-cover"
+                    className="w-24 h-24 sm:w-24 sm:h-24 rounded-full object-cover"
                     style={{
                       filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.2))',
                     }}

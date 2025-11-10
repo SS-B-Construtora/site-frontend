@@ -1,6 +1,11 @@
 import noticia1 from '@/assets/news/noticia1.svg';
 import noticia2 from '@/assets/news/noticia2.svg';
 import noticia3 from '@/assets/news/noticia3.svg';
+
+import imagem1 from '@/assets/news/imagem1.jpg';
+import imagem2 from '@/assets/news/image2.jpg';
+import imagem3 from '@/assets/news/image3.jpg';
+
 import { formatDate } from '@/utils/dateUtils';
 
 export interface NewsItem {
@@ -21,7 +26,7 @@ export { formatDate };
 export const newsHomeMock: NewsItem[] = [
   {
     id: '1',
-    title: 'SS&B Construtora inaugura novo parque eólico no Ceará',
+    title: 'Votorantim',
     description:
       'Nova instalação gera energia limpa para mais de 50 mil residências, reforçando nosso compromisso com a sustentabilidade e desenvolvimento regional.',
     content: `
@@ -35,7 +40,7 @@ export const newsHomeMock: NewsItem[] = [
       
       <p>Além dos benefícios ambientais, o parque eólico trará importantes impactos socioeconômicos para a comunidade local, incluindo geração de empregos permanentes para operação e manutenção, além de royalties para o município que contribuirão para melhorias na infraestrutura e serviços públicos.</p>
     `,
-    image: noticia1,
+    image: imagem1,
     publishedAt: '2024-11-01T00:00:00.000000Z', 
     author: 'Equipe SS&B',
     category: 'Energia Eólica',
@@ -43,7 +48,7 @@ export const newsHomeMock: NewsItem[] = [
   },
   {
     id: '2',
-    title: 'Conclusão da obra rodoviária CE-040 marca novo marco',
+    title: 'Restauração da rodovia CE-187: Salitre',
     description:
       'Finalização da modernização de 25km da rodovia estadual melhora mobilidade e conectividade entre municípios da região metropolitana.',
     content: `
@@ -57,7 +62,7 @@ export const newsHomeMock: NewsItem[] = [
       
       <p>"Esta obra representa nossa expertise em projetos rodoviários complexos e reafirma nosso papel fundamental no desenvolvimento da infraestrutura cearense", destacou o diretor de operações da empresa. O investimento total foi de R$ 45 milhões, recursos provenientes de parceria entre governo estadual e federal.</p>
     `,
-    image: noticia2,
+    image: imagem2,
     publishedAt: '2024-10-28T00:00:00.000000Z',
     author: 'Departamento de Engenharia',
     category: 'Obras Rodoviárias',
@@ -65,7 +70,7 @@ export const newsHomeMock: NewsItem[] = [
   },
   {
     id: '3',
-    title: 'Projeto social beneficia comunidades locais',
+    title: 'CTR: Limoeiro do Norte',
     description:
       'Iniciativa de capacitação profissional em parceria com escolas técnicas forma nova geração de trabalhadores especializados em construção.',
     content: `
@@ -79,7 +84,7 @@ export const newsHomeMock: NewsItem[] = [
       
       <p>Para 2025, o programa será expandido para incluir cursos de soldador, operador de máquinas pesadas e técnico em segurança do trabalho, com meta de formar mais 200 jovens. A empresa investiu R$ 2,5 milhões nesta primeira fase do projeto, recursos que incluem equipamentos, material didático e bolsas de estudo.</p>
     `,
-    image: noticia3,
+    image: imagem3,
     publishedAt: '2024-10-25T00:00:00.000000Z',
     author: 'Setor de Responsabilidade Social',
     category: 'Projetos Sociais',

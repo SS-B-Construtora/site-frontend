@@ -1,6 +1,6 @@
-import projeto1 from '@/assets/news/noticia1.svg';
-import projeto2 from '@/assets/news/noticia2.svg';
-import projeto3 from '@/assets/news/noticia3.svg';
+import projeto1 from '@/assets/news/imagem1.jpg';
+import projeto2 from '@/assets/news/image2.jpg';
+import projeto3 from '@/assets/news/image3.jpg';
 import { formatDate } from '@/utils/dateUtils';
 
 export interface ProjetoSocialItem {

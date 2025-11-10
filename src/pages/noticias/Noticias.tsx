@@ -2,7 +2,7 @@ import { Head } from '@/components/Head';
 import FooterSection from '@/components/Home/FooterSection';
 import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 import { newsHomeMock, formatDate } from '@/mocks/newsHome';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 
 function Noticias() {
@@ -16,7 +16,20 @@ function Noticias() {
 
   const totalPages = Math.ceil(newsHomeMock.length / noticiasPerPage);
 
-  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+  const paginate = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+    window.scrollTo({ 
+      top: 0, 
+      behavior: 'smooth' 
+    });
+    setTimeout(() => {
+      document.documentElement.scrollTop = 0;
+    }, 100);
+  };
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [currentPage]);
 
   return (
     <>
