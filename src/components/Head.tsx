@@ -16,8 +16,8 @@ const navLinks = [
     options: [{ name: 'Quem somos', href: '/aboutUs' }],
   },
   { name: 'Obras', href: '/obras' },
+  { name: 'SGI', href: '/qsms' },
   { name: 'Locações', href: '/locacoes' },
-  { name: 'QSMS', href: '/qsms' },
   { name: 'Notícias', href: '/noticias' },
   { name: 'Projetos Sociais', href: '/projetos-sociais' },
 ];

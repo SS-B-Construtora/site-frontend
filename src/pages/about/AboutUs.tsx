@@ -26,7 +26,7 @@ export function AboutUs() {
                 <div className="w-full max-w-[550px] space-y-6 py-12 lg:py-16 text-center lg:text-left mx-auto lg:mx-0">
                   <div className="space-y-3">
                     <h1 className="text-3xl lg:text-5xl font-bold text-[#06A956] leading-tight">
-                      SS&B <br /><span>Construtora Ltda</span>
+                      SS&B <br /><span>Construtora </span>
                     </h1>
                     <h2 className="text-3xl lg:text-5xl font-bold text-[#06A956] leading-tight">
                       
@@ -35,7 +35,7 @@ export function AboutUs() {
 
                   <div className="space-y-1 text-[#3F4141]">
                     <p className="text-[16px] leading-relaxed">
-                      A SS&B Construtora Ltda é fruto de três gerações de uma
+                      A SS&B Construtora é fruto de três gerações de uma
                       família de construtores que iniciou em 1905 com o Sr.
                       Antonio Salles, que construía barragens com caixotes de
                       madeira amarrados em cangalhas, sobre jegues. Fez pequenos
@@ -125,7 +125,7 @@ export function AboutUs() {
                 <p className="text-[16px] leading-relaxed text-[#3F4141]">
                   Em 2001, o Sr. Julio Salles começa a executar obras do Setor
                   Privado de forma independente e em 2008 inicia formalmente uma
-                  nova empresa - SS&B Construtora Ltda - que vem aprimorando
+                  nova empresa - SS&B Construtora - que vem aprimorando
                   seus conhecimentos investindo em seu quadro de funcionários e
                   aperfeiçoando-se a cada dia. Buscando a excelência em todas as
                   suas atividades dentro e fora da Indústria da Construção Civil

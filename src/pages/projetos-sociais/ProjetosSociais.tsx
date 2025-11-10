@@ -21,9 +21,9 @@ export function ProjetosSociais() {
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
-    window.scrollTo({ 
-      top: 0, 
-      behavior: 'smooth' 
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
     });
     setTimeout(() => {
       document.documentElement.scrollTop = 0;
@@ -52,10 +52,11 @@ export function ProjetosSociais() {
       <SocialMediaSidebar />
       <main className="pt-[72px]">
         <Head title="Projetos Sociais - SS&B Construtora" />
-        
+
         <div
           style={{
-            background: 'linear-gradient(124.1deg, #3F4141 -8.3%, #02351B 101.42%)',
+            background:
+              'linear-gradient(124.1deg, #3F4141 -8.3%, #02351B 101.42%)',
           }}
           className="py-44  -mt-20"
         >
@@ -65,8 +66,13 @@ export function ProjetosSociais() {
                 Projetos Sociais
               </h1>
               <p className="text-white text-lg lg:text-xl max-w-3xl mx-auto">
-                Conheça as iniciativas sociais da SS&B Construtora que transformam 
-                comunidades e promovem desenvolvimento sustentável em nossa região.
+                A SS&B Construtora é uma empresa que se preocupa com o bem-estar
+                social e procura sempre a excelência em todas as suas
+                atividades. Com base nessas premissas, a SS&B regularmente
+                realiza diversas ações sociais que visam proporcionar uma
+                melhoria na qualidade de vida das pessoas, bem como inclusão
+                social, transformando a preocupação em ações que impactem
+                positivamente o dia a dia de pessoas menos favorecidas.
               </p>
             </div>
           </div>
@@ -96,7 +102,7 @@ export function ProjetosSociais() {
                       <div className="flex flex-wrap gap-2 mb-4">
                         <span
                           className={`px-3 py-1 rounded-full text-xs font-medium ${getStatusColor(
-                            projeto.status
+                            projeto.status,
                           )}`}
                         >
                           {projeto.status}
@@ -116,19 +122,39 @@ export function ProjetosSociais() {
 
                       <div className="flex flex-wrap gap-4 text-sm text-gray-600 mb-4">
                         <div className="flex items-center gap-1">
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
+                          <svg
+                            className="w-4 h-4"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                              clipRule="evenodd"
+                            />
                           </svg>
                           Início: {formatDate(projeto.startDate)}
                         </div>
                         <div className="flex items-center gap-1">
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                          <svg
+                            className="w-4 h-4"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              fillRule="evenodd"
+                              d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                              clipRule="evenodd"
+                            />
                           </svg>
                           {projeto.location}
                         </div>
                         <div className="flex items-center gap-1">
-                          <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                          <svg
+                            className="w-4 h-4"
+                            fill="currentColor"
+                            viewBox="0 0 20 20"
+                          >
                             <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
                           </svg>
                           {projeto.beneficiados.toLocaleString()} beneficiados
@@ -138,8 +164,18 @@ export function ProjetosSociais() {
                       <div className="flex items-center justify-between">
                         <button className="inline-flex items-center text-[#06A956] font-semibold hover:text-[#048A47] transition-colors duration-200">
                           Leia mais
-                          <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          <svg
+                            className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-200"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M9 5l7 7-7 7"
+                            />
                           </svg>
                         </button>
                       </div>
@@ -160,23 +196,27 @@ export function ProjetosSociais() {
                 </button>
 
                 <div className="flex gap-2">
-                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
-                    <button
-                      key={page}
-                      onClick={() => handlePageChange(page)}
-                      className={`px-4 py-2 rounded-lg transition-colors duration-200 ${
-                        currentPage === page
-                          ? 'bg-[#06A956] text-white'
-                          : 'bg-white border border-gray-300 hover:bg-gray-50'
-                      }`}
-                    >
-                      {page}
-                    </button>
-                  ))}
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                    (page) => (
+                      <button
+                        key={page}
+                        onClick={() => handlePageChange(page)}
+                        className={`px-4 py-2 rounded-lg transition-colors duration-200 ${
+                          currentPage === page
+                            ? 'bg-[#06A956] text-white'
+                            : 'bg-white border border-gray-300 hover:bg-gray-50'
+                        }`}
+                      >
+                        {page}
+                      </button>
+                    ),
+                  )}
                 </div>
 
                 <button
-                  onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
+                  onClick={() =>
+                    handlePageChange(Math.min(totalPages, currentPage + 1))
+                  }
                   disabled={currentPage === totalPages}
                   className="px-4 py-2 bg-white border border-gray-300 rounded-lg disabled:opacity-50 disabled:cursor-not-allowed hover:bg-gray-50 transition-colors duration-200"
                 >
