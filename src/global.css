@@ -4,7 +4,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-	--font-sans: Inter, sans-serif;
+	--font-sans: "Montserrat", "Montserrat-Local", sans-serif;
 }
 
 @theme inline {
@@ -119,6 +119,6 @@
     @apply border-border outline-ring/50;
 	}
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
 	}
 }
