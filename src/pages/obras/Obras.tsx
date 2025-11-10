@@ -1,5 +1,4 @@
 import { Head } from '@/components/Head';
-import Image from '@/assets/obras/obras.svg';
 import FooterSection from '@/components/Home/FooterSection';
 import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 import { obrasMockData } from '@/mocks/obrasMock';
@@ -8,12 +7,21 @@ import bgIndustrias from '@/assets/obras/industrias.jpg';
 import bgRodovias from '@/assets/obras/rodoviarias.jpg';
 import bgTerraplanagem from '@/assets/obras/terraplanagem.jpg';
 import { useNavigate } from 'react-router';
+import { useEffect, useState } from 'react';
 
 //icones
 import iconeEolicos from '@/assets/obras/icons/eolicos.jpg';
 import iconeRodovias from '@/assets/obras/icons/rodoviarias.jpg';
 import iconeTerraplanagem from '@/assets/obras/icons/terraplanagem.jpg';
 import iconeIndustrias from '@/assets/obras/icons/industrias.jpg';
+
+//obras
+import ufvBelmonte from '@/assets/obras/UFV BELMONTE.jpg';
+import ufvCristino from '@/assets/obras/UFV CRISTINO.jpg';
+import ufvLins from '@/assets/obras/UFV LINS.jpg';
+import ufvParonama from '@/assets/obras/UFV PANORAMA.jpg';
+import pontaDeSuipe from '@/assets/obras/PONTA DE SUIPE.jpg';
+import bangalos from '@/assets/obras/BANGALOS.jpg';
 
 const getBackgroundForCategory = (category: string) => {
   const normalized = category.trim().toUpperCase();
@@ -64,22 +72,111 @@ const iconeObra = () => {
   );
 };
 
+const carouselImages = [
+  {
+    src: ufvBelmonte,
+    title: 'UFV Belmonte',
+  },
+  {
+    src: ufvCristino,
+    title: 'UFV Cristino',
+  },
+  {
+    src: ufvLins,
+    title: 'UFV Lins ',
+  },
+  {
+    src: ufvParonama,
+    title: 'UFV Paronama ',
+  },
+  {
+    src: pontaDeSuipe,
+    title: 'Ponta de Suipe ',
+  },
+  {
+    src: bangalos,
+    title: 'Bangalos',
+  }
+];
+
 function Obras() {
   const navigate = useNavigate();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % carouselImages.length);
+    }, 4000); // 4 segundos
+    return () => clearInterval(interval);
+  }, []);
+
+  const nextSlide = () =>
+    setCurrent((prev) => (prev + 1) % carouselImages.length);
+  const prevSlide = () =>
+    setCurrent(
+      (prev) => (prev - 1 + carouselImages.length) % carouselImages.length,
+    );
 
   return (
     <>
       <SocialMediaSidebar />
       <main className="pt-[72px]">
         <Head title="Obras - SS&B Construtora" />
-        <div className="relative -mt-[100px] pt-[72px]">
-          <img
-            src={Image}
-            alt="Obras - SS&B Construtora"
-            className="w-full h-[450px] lg:h-[500px] object-cover"
-          />
-        </div>
+        <div className="relative -mt-[100px] pt-[72px] w-full h-[500px] lg:h-[600px] flex items-center justify-center overflow-hidden">
+          {carouselImages[current] ? (
+            <>
+              <img
+                src={carouselImages[current].src}
+                alt={carouselImages[current].title}
+                className="w-full h-full object-cover transition-all duration-500"
+              />
+              <div className="absolute left-6 bottom-6 z-10 flex items-start">
+                <h2 className="text-[#00FF7D] text-2xl lg:text-4xl font-bold bg-black/40 px-6 py-2 rounded-lg drop-shadow-lg">
+                  {carouselImages[current].title}
+                </h2>
+              </div>
+            </>
+          ) : (
+            <div className="w-full h-full flex items-center justify-center bg-gray-200">
+              <span className="text-gray-500">Nenhuma imagem disponível</span>
+            </div>
+          )}
 
+          <button
+            onClick={nextSlide}
+            className="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 text-white rounded-full p-2 hover:bg-black/60"
+            aria-label="Próximo"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="w-3 h-3 sm:w-4 sm:h-4 md:w-5 md:h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+          <div className="absolute bottom-6 left-0 right-0 flex justify-center items-center gap-2 z-20">
+            {carouselImages.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrent(idx)}
+                className={`h-3 w-3 rounded-full transition-all duration-300 border border-white focus:outline-none ${
+                  idx === current
+                    ? 'bg-green-500 w-4'
+                    : 'bg-white/70 hover:bg-white'
+                }`}
+                aria-label={`Ir para imagem ${idx + 1}`}
+              />
+            ))}
+          </div>
+        </div>
         <div className="bg-[#E9F0F0]">
           <h1 className="text-[#3F4141] font-bold text-3xl lg:text-4xl text-center py-10 px-4 lg:px-0">
             Aqui você vê as{' '}

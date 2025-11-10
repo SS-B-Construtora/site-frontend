@@ -86,7 +86,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     name: 'WhatsApp',
-    url: 'https://wa.me/5511999999999',
+    url: 'https://wa.me/85999090983',
     bgColor: '#B5BBBB',
     icon: (
       <svg

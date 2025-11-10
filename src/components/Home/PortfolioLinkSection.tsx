@@ -1,20 +1,14 @@
 import { useState, useEffect } from 'react';
 import cdcLogo from '@/assets/parceiros/CDC.png';
-import globenetLogo from '@/assets/parceiros/Globenet2003.webp';
-import infraeroLogo from '@/assets/parceiros/INFRAERO.png';
-import ibisLogo from '@/assets/parceiros/Ibis-logo-2019.svg.png';
-import itauLogo from '@/assets/parceiros/Itaú_Unibanco_logo_2023.svg.png';
-import fraportLogo from '@/assets/parceiros/Logo_Fraport_Social.png';
-import ibamaLogo from '@/assets/parceiros/Logo_IBAMA.svg.png';
-import edpLogo from '@/assets/parceiros/edp.png';
-import eletronuclearLogo from '@/assets/parceiros/eletronuclear.png';
-import essoLogo from '@/assets/parceiros/esso.svg.png';
-import fiocruzLogo from '@/assets/parceiros/fiocruz.jpeg';
-import hospitalJaguaribeLogo from '@/assets/parceiros/hospitalJaguaribe.png';
-import iguatemiLogo from '@/assets/parceiros/iguatemi.png';
-import genesisLogo from '@/assets/parceiros/logo_0004_Hospital-Genesis.png';
-import huwcLogo from '@/assets/parceiros/logohuwc-nova.png';
 import { useNavigate } from 'react-router';
+
+import parceiro1 from '@/assets/parceiros/parceiro1.jpeg';
+import parceiro2 from '@/assets/parceiros/parceiro2.jpeg';
+import parceiro3 from '@/assets/parceiros/parceira3.jpeg';
+import parceiro4 from '@/assets/parceiros/parceiro4.jpeg';
+import parceiro5 from '@/assets/parceiros/parceiro5.jpeg';
+import parceiro6 from '@/assets/parceiros/parceiro6.jpeg';
+import parceiro7 from '@/assets/parceiros/parceiro7.jpeg';
 
 type Partner = {
   id: string;
@@ -26,93 +20,46 @@ type Partner = {
 const partners: Partner[] = [
   {
     id: '1',
-    src: cdcLogo,
-    alt: 'CDC Logo',
-    name: 'CDC',
+    src: parceiro1,
+    alt: 'BTB Logo',
+    name: 'BTB',
   },
   {
     id: '2',
-    src: infraeroLogo,
-    alt: 'Infraero Logo',
-    name: 'Infraero',
+    src: parceiro2,
+    alt: 'Governo do Ceará Logo',
+    name: 'Governo do Ceará',
   },
-  {
+   {
     id: '3',
-    src: itauLogo,
-    alt: 'Itaú Unibanco Logo',
-    name: 'Itaú Unibanco',
+    src: parceiro3,
+    alt: 'Chesf Logo',
+    name: 'Chesf',
   },
-  {
+   {
     id: '4',
-    src: fraportLogo,
-    alt: 'Fraport Logo',
-    name: 'Fraport',
+    src: parceiro4,
+    alt: 'APTM Terminals Logo',
+    name: 'APTM Terminals',
   },
   {
     id: '5',
-    src: ibamaLogo,
-    alt: 'IBAMA Logo',
-    name: 'IBAMA',
+    src: parceiro5,
+    alt: 'Cobra Brasil Logo',
+    name: 'Cobra Brasil',
   },
   {
     id: '6',
-    src: edpLogo,
+    src: parceiro6,
     alt: 'EDP Logo',
     name: 'EDP',
   },
+
   {
     id: '7',
-    src: eletronuclearLogo,
-    alt: 'Eletronuclear Logo',
-    name: 'Eletronuclear',
-  },
-  {
-    id: '8',
-    src: essoLogo,
-    alt: 'Esso Logo',
-    name: 'Esso',
-  },
-  {
-    id: '9',
-    src: fiocruzLogo,
-    alt: 'Fiocruz Logo',
-    name: 'Fiocruz',
-  },
-  {
-    id: '10',
-    src: iguatemiLogo,
-    alt: 'Iguatemi Logo',
-    name: 'Iguatemi',
-  },
-  {
-    id: '11',
-    src: hospitalJaguaribeLogo,
-    alt: 'Hospital Jaguaribe Logo',
-    name: 'Hospital Jaguaribe',
-  },
-  {
-    id: '12',
-    src: genesisLogo,
-    alt: 'Hospital Genesis Logo',
-    name: 'Hospital Genesis',
-  },
-  {
-    id: '13',
-    src: huwcLogo,
-    alt: 'HUWC Logo',
-    name: 'HUWC',
-  },
-  {
-    id: '14',
-    src: ibisLogo,
-    alt: 'Ibis Logo',
-    name: 'Ibis Hotels',
-  },
-  {
-    id: '15',
-    src: globenetLogo,
-    alt: 'Globenet Logo',
-    name: 'Globenet',
+    src: parceiro7,
+    alt: 'CSP Logo',
+    name: 'CSP',
   },
 ];
 
@@ -163,7 +110,7 @@ export default function PortfolioLinkSection() {
               SS&B
             </h2>
             <h2 className="text-2xl sm:text-3xl lg:text-5xl font-semibold text-[#06A956] leading-tight">
-              Construtora Ltda
+              Construtora
             </h2>
 
             <p className="mt-3 lg:mt-4 text-2xl sm:text-3xl lg:text-5xl font-semibold text-[#06A956] leading-tight">

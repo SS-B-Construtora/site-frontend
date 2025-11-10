@@ -119,21 +119,6 @@ function FooterSection() {
           </div>
           <div className="flex items-start space-x-3 text-left">
             <img
-              src={endereco}
-              alt="Ícone endereço"
-              className="w-6 h-6 mt-1 flex-shrink-0"
-            />
-            <div>
-              <p className="text-[#3F4141] text-xs lg:text-sm leading-relaxed">
-                R. Joaguim Ferreira, 70 Mangabeira
-                <br />
-                Eusébio/CE 61760-000
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start space-x-3 text-left">
-            <img
               src={contato}
               alt="Ícone telefone"
               className="w-6 h-6 mt-1 flex-shrink-0"
@@ -144,15 +129,9 @@ function FooterSection() {
                   href="tel:+5585991798804"
                   className="hover:text-[#06A956] transition-colors"
                 >
-                  (85) 99179-8804
+                 (85) 9169-9606
                 </a>
                 <br />
-                <a
-                  href="tel:+5585999090983"
-                  className="hover:text-[#06A956] transition-colors"
-                >
-                  (85) 99909-0983
-                </a>
               </p>
             </div>
           </div>

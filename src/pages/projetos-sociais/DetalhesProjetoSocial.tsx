@@ -123,44 +123,6 @@ export function DetalhesProjetoSocial() {
               <h2 className="text-2xl lg:text-3xl font-bold text-[#3F4141] mb-4">
                 Sobre o Projeto
               </h2>
-              <p className="text-lg text-[#3F4141] leading-relaxed">
-                {projeto.description}
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 p-6 bg-[#E9F0F0] rounded-lg">
-              <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-[#06A956] mb-2">
-                  {projeto.beneficiados.toLocaleString()}
-                </div>
-                <div className="text-sm lg:text-base text-[#3F4141] font-medium">
-                  Pessoas Beneficiadas
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-[#06A956] mb-2">
-                  {projeto.status}
-                </div>
-                <div className="text-sm lg:text-base text-[#3F4141] font-medium">
-                  Status Atual
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-[#06A956] mb-2">
-                  {(() => {
-                    const startDate = typeof projeto.startDate === 'number' 
-                      ? new Date(projeto.startDate) 
-                      : new Date(projeto.startDate);
-                    const yearsDiff = new Date().getFullYear() - startDate.getFullYear();
-                    return yearsDiff || '< 1';
-                  })()}
-                </div>
-                <div className="text-sm lg:text-base text-[#3F4141] font-medium">
-                  Anos de Atuação
-                </div>
-              </div>
             </div>
 
             <div className="prose prose-lg max-w-none">
