@@ -22,7 +22,7 @@ function FooterSection() {
     <div className="flex flex-col items-center lg:items-start cursor-pointer">
       <img
         className="h-20"
-        src="../../public/logo.png"
+        src="/logo.png"
         alt="Logo SS&B Construtora"
       />
     </div>
