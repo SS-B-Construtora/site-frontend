@@ -4,7 +4,46 @@ import FooterSection from '@/components/Home/FooterSection';
 import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 import { obrasMockData } from '@/mocks/obrasMock';
 import bgObras from '@/assets/obras/bgmock.svg';
+import bgIndustrias from '@/assets/obras/industrias.jpg';
+import bgRodovias from '@/assets/obras/rodoviarias.jpg';
+import bgTerraplanagem from '@/assets/obras/terraplanagem.jpg';
 import { useNavigate } from 'react-router';
+
+//icones
+import iconeEolicos from '@/assets/obras/icons/eolicos.jpg';
+import iconeRodovias from '@/assets/obras/icons/rodoviarias.jpg';
+import iconeTerraplanagem from '@/assets/obras/icons/terraplanagem.jpg';
+import iconeIndustrias from '@/assets/obras/icons/industrias.jpg';
+
+const getBackgroundForCategory = (category: string) => {
+  const normalized = category.trim().toUpperCase();
+
+  switch (normalized) {
+    case 'PARQUES INDUSTRIAIS':
+      return bgIndustrias;
+    case 'OBRAS RODOVIÁRIAS':
+      return bgRodovias;
+    case 'TERRAPLANAGEM E PAVIMENTAÇÃO':
+      return bgTerraplanagem;
+    default:
+      return bgObras;
+  }
+};
+
+const getIcon = (category: string) => {
+  const normalized = category.trim().toUpperCase();
+
+  switch (normalized) {
+    case 'PARQUES INDUSTRIAIS':
+      return iconeIndustrias;
+    case 'OBRAS RODOVIÁRIAS':
+      return iconeRodovias;
+    case 'TERRAPLANAGEM E PAVIMENTAÇÃO':
+      return iconeTerraplanagem;
+    default:
+      return iconeEolicos;
+  }
+};
 
 const iconeObra = () => {
   return (
@@ -53,33 +92,27 @@ function Obras() {
             {obrasMockData.map((item) => (
               <div key={item.id} className="relative">
                 <div
-                  className="absolute inset-0 border border-gray-300 rounded-lg shadow-md ml-4 sm:hidden"
+                  className="absolute inset-0 border border-gray-300 rounded-lg shadow-md ml-4 overflow-hidden"
                   style={{
-                    backgroundImage: `url(${bgObras})`,
-                    backgroundSize: '500%',
+                    backgroundImage: `url(${getBackgroundForCategory(
+                      item.category,
+                    )})`,
+                    backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
-                    filter: 'blur(2px)',
-                    maskImage: 'radial-gradient(circle 32px at 22px 50%, transparent 60px, black 36px)',
-                    WebkitMaskImage: 'radial-gradient(circle 32px at 22px 50%, transparent 60px, black 36px)',
                   }}
-                ></div>
+                >
+                  <div
+                    className="absolute inset-0"
+                    style={{
+                      backgroundColor: 'rgba(6, 169, 86, 0.1)',
+                      backdropFilter: 'blur(3px)',
+                    }}
+                  ></div>
+                </div>
 
                 <div
-                  className="absolute inset-0 border border-gray-300 rounded-lg shadow-md ml-4 hidden sm:block"
-                  style={{
-                    backgroundImage: `url(${bgObras})`,
-                    backgroundSize: '500%',
-                    backgroundPosition: 'center',
-                    backgroundRepeat: 'no-repeat',
-                    filter: 'blur(2px)',
-                    maskImage: 'radial-gradient(circle 32px at 22px 50%, transparent 60px, black 36px)',
-                    WebkitMaskImage: 'radial-gradient(circle 32px at 22px 50%, transparent 60px, black 36px)',
-                  }}
-                ></div>
-
-                <div 
-                  className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 sm:hidden"
+                  className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10"
                   style={{
                     width: '48px',
                     height: '48px',
@@ -89,26 +122,15 @@ function Obras() {
                   }}
                 ></div>
 
-                <div 
-                  className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 hidden sm:block"
-                  style={{
-                    width: '48px',
-                    height: '48px',
-                    borderRadius: '50%',
-                    border: '4px solid white',
-                    boxShadow: 'inset 0 0 10px rgba(0,0,0,0.3)',
-                  }}
-                ></div>
-
-                <div className="relative z-10 p-8 pl-12 ml-4 sm:p-8 sm:pl-12 sm:ml-4 flex flex-col items-center text-center min-h-[350px] sm:min-h-[350px]">
-                  <h2 className="text-xl sm:text-xl font-bold text-white mb-4 sm:mb-4 drop-shadow-md">
+                <div className="relative z-10 p-8 pl-12 ml-4 flex flex-col items-center text-center min-h-[350px]">
+                  <h2 className="text-xl font-bold text-white mb-4 drop-shadow-md">
                     {item.category}
                   </h2>
                   <div
                     className="space-y-3 px-4 py-4 rounded-lg shadow-sm w-full max-w-sm ml-12"
                     style={{
-                      backdropFilter: 'blur(20px)',
-                      backgroundColor: '#E9F0F0',
+                      backgroundColor: 'rgba(233, 240, 240, 0.95)',
+                      backdropFilter: 'blur(10px)',
                     }}
                   >
                     {item.obras.map((obra, index) => (
@@ -120,7 +142,7 @@ function Obras() {
                         }
                       >
                         {iconeObra()}
-                        <span className="text-[#3F4141] text-xs lg:text-sm drop-shadow-sm hover:font-bold transition-colors duration-200 leading-tight">
+                        <span className="text-[#3F4141] text-xs lg:text-sm hover:font-bold transition-colors duration-200 leading-tight">
                           {obra.nome}
                         </span>
                       </div>
@@ -130,11 +152,11 @@ function Obras() {
 
                 <div className="absolute -left-10 top-1/2 transform -translate-y-1/2 z-20 ">
                   <img
-                    src={item.icon}
+                    src={getIcon(item.category)}
                     alt={item.category}
                     className="w-24 h-24 sm:w-24 sm:h-24 rounded-full object-cover"
                     style={{
-                      filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.2))',
+                      border: '10px solid #E9F0F0',
                     }}
                   />
                 </div>

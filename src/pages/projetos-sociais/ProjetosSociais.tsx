@@ -57,7 +57,7 @@ export function ProjetosSociais() {
           style={{
             background: 'linear-gradient(124.1deg, #3F4141 -8.3%, #02351B 101.42%)',
           }}
-          className="py-16 lg:py-24"
+          className="py-44  -mt-20"
         >
           <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center">
