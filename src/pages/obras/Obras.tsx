@@ -16,12 +16,12 @@ import iconeTerraplanagem from '@/assets/obras/icons/terraplanagem.jpg';
 import iconeIndustrias from '@/assets/obras/icons/industrias.jpg';
 
 //obras
-import ufvBelmonte from '@/assets/obras/UFV BELMONTE.jpg';
-import ufvCristino from '@/assets/obras/UFV CRISTINO.jpg';
-import ufvLins from '@/assets/obras/UFV LINS.jpg';
-import ufvParonama from '@/assets/obras/UFV PANORAMA.jpg';
-import pontaDeSuipe from '@/assets/obras/PONTA DE SUIPE.jpg';
-import bangalos from '@/assets/obras/BANGALOS.jpg';
+import ufvBelmonte from '@/assets/obras/ufv_belmonte.jpg';
+import ufvCristino from '@/assets/obras/ufv_cristino.jpg';
+import ufvLins from '@/assets/obras/ufv_lins.jpg';
+import ufvParonama from '@/assets/obras/ufv_panorama.jpg';
+import pontaDeSuipe from '@/assets/obras/ponta_de_suipe.jpg';
+import bangalos from '@/assets/obras/bangalos.jpg';
 
 const getBackgroundForCategory = (category: string) => {
   const normalized = category.trim().toUpperCase();
@@ -122,7 +122,7 @@ function Obras() {
       <SocialMediaSidebar />
       <main className="pt-[72px]">
         <Head title="Obras - SS&B Construtora" />
-        <div className="relative -mt-[100px] pt-[72px] w-full h-[500px] lg:h-[600px] flex items-center justify-center overflow-hidden">
+        <div className="relative -mt-[100px] pt-[72px] w-full h-[500px] lg:h-[800px] flex items-center justify-center overflow-hidden">
           {carouselImages[current] ? (
             <>
               <img
