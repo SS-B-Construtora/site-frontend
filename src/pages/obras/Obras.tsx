@@ -21,7 +21,7 @@ import ufvCristino from '@/assets/obras/ufv_cristino.jpg';
 import ufvLins from '@/assets/obras/ufv_lins.jpg';
 import ufvParonama from '@/assets/obras/ufv_panorama.jpg';
 import pontaDeSuipe from '@/assets/obras/ponta_de_suipe.jpg';
-import bangalos from '@/assets/obras/bangalos.jpg';
+import bangalos from '@/assets/obras/bangalos_.jpg';
 
 const getBackgroundForCategory = (category: string) => {
   const normalized = category.trim().toUpperCase();
