@@ -7,7 +7,7 @@ function Contact() {
   return (
     <>
       <SocialMediaSidebar />
-      <main className="pt-[72px]">
+      <main className="">
         <Head title="Contato - SS&B Construtora" />
         <ContactSection />
         <FooterSection />

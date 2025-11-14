@@ -120,9 +120,9 @@ function Obras() {
   return (
     <>
       <SocialMediaSidebar />
-      <main className="pt-[72px]">
+      <main className="">
         <Head title="Obras - SS&B Construtora" />
-        <div className="relative -mt-[100px] pt-[72px] w-full h-[500px] lg:h-[800px] flex items-center justify-center overflow-hidden">
+        <div className="relative -mt-[100px]  w-full h-[500px] lg:h-[800px] flex items-center justify-center overflow-hidden">
           {carouselImages[current] ? (
             <>
               <img

@@ -15,7 +15,7 @@ function DetalhesNoticia() {
     return (
       <>
         <SocialMediaSidebar />
-        <main className="pt-[72px] min-h-screen flex flex-col bg-[#E9F0F0]">
+        <main className=" min-h-screen flex flex-col bg-[#E9F0F0]">
           <Head title="Notícia não encontrada - SS&B Construtora" />
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 text-center">
             <h1 className="text-2xl font-bold text-[#3F4141] mb-4">Notícia não encontrada</h1>
@@ -34,7 +34,7 @@ function DetalhesNoticia() {
   return (
     <>
       <SocialMediaSidebar />
-      <main className="pt-[72px] min-h-screen flex flex-col bg-[#E9F0F0]">
+      <main className=" min-h-screen flex flex-col bg-[#E9F0F0]">
         <Head title={`${noticia.title} - SS&B Construtora`} />
 
         <section className="py-8 md:py-16 bg-[#E9F0F0]">

@@ -34,7 +34,7 @@ function Locacoes() {
   return (
     <>
       <SocialMediaSidebar />
-      <main className="pt-[72px] min-h-screen flex flex-col bg-[#E9F0F0]">
+      <main className=" min-h-screen flex flex-col bg-[#E9F0F0]">
         <Head title="Locações - SS&B Construtora" />
 
         <section className="py-8 md:py-16 bg-[#E9F0F0]">

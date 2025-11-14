@@ -42,7 +42,7 @@ function QSMS() {
   return (
     <>
       <SocialMediaSidebar />
-      <main className="pt-[72px] min-h-screen flex flex-col">
+      <main className=" min-h-screen flex flex-col">
         <Head title="Quem Somos - SS&B Construtora" />
 
         <div className="bg-[#E9F0F0] flex-grow">

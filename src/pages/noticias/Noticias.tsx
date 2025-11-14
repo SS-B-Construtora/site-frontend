@@ -34,7 +34,7 @@ function Noticias() {
   return (
     <>
       <SocialMediaSidebar />
-      <main className="pt-[72px] min-h-screen flex flex-col bg-[#E9F0F0]">
+      <main className=" min-h-screen flex flex-col bg-[#E9F0F0]">
         <Head title="Notícias - SS&B Construtora" />
 
         <section className=" bg-[#E9F0F0]">

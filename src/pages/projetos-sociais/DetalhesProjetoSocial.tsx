@@ -40,7 +40,7 @@ export function DetalhesProjetoSocial() {
 
   if (!projeto) {
     return (
-      <main className="pt-[72px]">
+      <main className="">
         <Head title="Projeto não encontrado - SS&B Construtora" />
         <div className="flex flex-col justify-center items-center min-h-screen bg-[#E9F0F0]">
           <div className="max-w-md text-center">
@@ -64,7 +64,7 @@ export function DetalhesProjetoSocial() {
       <main className="pt-0">
         <Head title={`${projeto.title} - Projetos Sociais - SS&B Construtora`} />
         
-        <div className="relative h-96 lg:h-[500px] overflow-hidden -mt-[72px] pt-[72px]">
+        <div className="relative h-96 lg:h-[500px] overflow-hidden -mt-[72px] ">
           <img
             src={projeto.image}
             alt={projeto.title}

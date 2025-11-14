@@ -16,7 +16,7 @@ export function AboutUs() {
   return (
     <>
       <SocialMediaSidebar />
-      <main className="pt-[72px]">
+      <main className="">
         <Head title="Quem Somos - SS&B Construtora" />
 
         <div className="bg-[#E9F0F0]">

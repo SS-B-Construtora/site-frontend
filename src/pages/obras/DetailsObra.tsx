@@ -45,7 +45,7 @@ const DetailsObra = () => {
   return (
     <>
       <SocialMediaSidebar />
-      <main className="pt-[72px]">
+      <main className="">
         <Head title="Obras - SS&B Construtora" />
         <div className="min-h-screen bg-gray-50">
           <div className="max-w-6xl mx-auto px-4 py-8">
