@@ -45,7 +45,7 @@ function QSMS() {
       <main className=" min-h-screen flex flex-col">
         <Head title="Quem Somos - SS&B Construtora" />
 
-        <div className="bg-[#E9F0F0] flex-grow">
+        <div className="bg-[#E9F0F0] flex-grow mt-14">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row min-h-[calc(100vh-72px)] lg:items-start">
               <div className="w-full lg:w-1/2 flex items-start lg:items-center">
