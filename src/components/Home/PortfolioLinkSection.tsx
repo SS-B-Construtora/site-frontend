@@ -18,45 +18,28 @@ type Partner = {
 };
 
 const partners: Partner[] = [
+  
   {
     id: '1',
-    src: parceiro1,
-    alt: 'BTB Logo',
-    name: 'BTB',
-  },
-  {
-    id: '2',
     src: parceiro2,
     alt: 'Governo do Ceará Logo',
     name: 'Governo do Ceará',
   },
-   {
-    id: '3',
-    src: parceiro3,
-    alt: 'Chesf Logo',
-    name: 'Chesf',
-  },
-   {
-    id: '4',
-    src: parceiro4,
-    alt: 'APTM Terminals Logo',
-    name: 'APTM Terminals',
-  },
   {
-    id: '5',
+    id: '2',
     src: parceiro5,
     alt: 'Cobra Brasil Logo',
     name: 'Cobra Brasil',
   },
   {
-    id: '6',
+    id: '3',
     src: parceiro6,
     alt: 'EDP Logo',
     name: 'EDP',
   },
 
   {
-    id: '7',
+    id: '4',
     src: parceiro7,
     alt: 'CSP Logo',
     name: 'CSP',
