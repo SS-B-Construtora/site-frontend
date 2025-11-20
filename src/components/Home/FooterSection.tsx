@@ -59,7 +59,7 @@ function FooterSection() {
     { title: 'Projetos Sociais', href: '/projetos-sociais' },
     { title: 'Notícias', href: '/noticias' },
     { title: 'Locações', href: '/locacoes' },
-    { title: 'QSMS', href: '/qsms' },
+    { title: 'SGI', href: '/qsms' },
     { title: 'Fale Conosco', href: '/faleconosco' },
     { title: 'Código de Ética', href: codigoEticaPdf, isExternal: true },
   ];
