@@ -56,7 +56,7 @@ export default function FullScreenFadeCarousel({
       }
       ref={emblaRef}
     >
-      <div className="flex h-full mt-[4em]">
+      <div className="flex h-full pt-[3em]">
         {slides.map((slide, i) => (
           <div key={i} className="relative flex-[0_0_100%] h-full">
             <img
