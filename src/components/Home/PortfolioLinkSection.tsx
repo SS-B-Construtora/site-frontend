@@ -107,8 +107,7 @@ export default function PortfolioLinkSection() {
           <div className="w-full lg:flex-1 mt-2 lg:mt-4">
             <div className="lg:ml-30">
               <h2 className="text-sm sm:text-base lg:text-[1.125rem] font-bold text-[#3F4141] text-slate-600 dark:text-slate-300 leading-relaxed text-left">
-                Possuimos todo o maquinário para sua obra! Uma vasta variedade
-                prontas para te atender.
+                Possuímos todo o maquinário para a sua obra, com uma vasta variedade de equipamentos prontos para atendê-lo.
               </h2>
               <div className="flex justify-start mt-4 lg:mt-3" onClick={() => navigate('/locacoes')}>
                 <button className="border border-[#3F4141] text-[#3F4141] font-medium text-xs sm:text-sm rounded-md sm:rounded-lg px-3 py-1.5 sm:px-4 sm:py-2 transition-colors duration-200 hover:bg-[#06A956] hover:text-white hover:border-[#06A956] shadow-sm hover:shadow-md">
