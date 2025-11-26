@@ -97,7 +97,8 @@ function NewsCarousel() {
                     <h3 className="font-bold text-lg mb-2 line-clamp-2">
                       {item.title}
                     </h3>
-                    <button className="rounded-full w-full text-gray-300 border border-white  mb-2 rounded-md mt-4 hover:text-white hover:bg-[#A1C737] transition-colors duration-200 font-bold">
+                    <button className="rounded-full w-full text-gray-300 border border-white  mb-2 rounded-md mt-4 hover:text-white hover:bg-[#A1C737] transition-colors duration-200 font-bold"
+                    onClick={() => navigate(`/noticias/detalhes?id=${item.id}`)}>
                       Leia mais
                     </button>
                   </div>
