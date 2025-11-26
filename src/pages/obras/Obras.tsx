@@ -132,7 +132,7 @@ function Obras() {
               />
               <div className="absolute left-6 bottom-6 z-10 flex items-start">
                 <h2 className="text-[#00FF7D] text-2xl lg:text-4xl font-bold bg-black/40 px-6 py-2 rounded-lg drop-shadow-lg">
-                  {carouselImages[current].title}
+                  
                 </h2>
               </div>
             </>
