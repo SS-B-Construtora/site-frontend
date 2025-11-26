@@ -5,6 +5,12 @@ import noticia3 from '@/assets/news/noticia3.svg';
 import imagem1 from '@/assets/news/imagem1.jpg';
 import imagem2 from '@/assets/news/image2.jpg';
 import imagem3 from '@/assets/news/image3.jpg';
+import ufvpanoramacobra from '@/assets/news/ufvpanoramacobra.jpg';
+import ufvbelmonte from '@/assets/news/ufvbelmonte.jpg';
+import sublins from '@/assets/news/subestacaolins.jpg';
+import cristinoecastro from '@/assets/news/cristinoecastro.jpg';
+import ribeiro from '@/assets/news/ribeiro.jpg';
+import secristino from '@/assets/news/secristino.jpg';
 
 import { formatDate } from '@/utils/dateUtils';
 
@@ -74,7 +80,7 @@ export const newsHomeMock: NewsItem[] = [
       <h3>Compromisso com a transição energética</h3>
       <p>A UFV Panorama representa mais um avanço na expansão da geração renovável no Nordeste. A SS&B reafirma seu compromisso com soluções de engenharia que fortalecem o futuro sustentável, impulsionam a economia regional e contribuem para o desenvolvimento energético do país.</p>
     `,
-    image: imagem2,
+    image: ufvpanoramacobra,
     publishedAt: '2025-11-25T00:00:00.000000Z',
     author: 'SS&B Comunicação',
     category: 'Energia Solar',
@@ -121,7 +127,7 @@ export const newsHomeMock: NewsItem[] = [
       <h3>Fortalecimento da transição energética no sertão piauiense</h3>
       <p>A SS&B demonstra mais uma vez sua capacidade técnica ao executar obras de grande magnitude, contribuindo para o avanço da geração solar em uma das regiões mais estratégicas do Brasil para produção de energia renovável.</p>
     `,
-    image: imagem2,
+    image: cristinoecastro,
     publishedAt: '2025-11-24T00:00:00.000000Z',
     author: 'SS&B Comunicação',
     category: 'Energia Solar',
@@ -153,7 +159,7 @@ export const newsHomeMock: NewsItem[] = [
       <h3>Compromisso com energia limpa e desenvolvimento regional</h3>
       <p>Com mais este projeto, a SS&B reafirma seu protagonismo na engenharia aplicada à transição energética, contribuindo para a geração sustentável e impulsionando o desenvolvimento econômico do Sertão pernambucano.</p>
     `,
-    image: imagem2,
+    image: ufvbelmonte,
     publishedAt: '2025-11-23T00:00:00.000000Z',
     author: 'SS&B Comunicação',
     category: 'Energia Solar',
@@ -204,7 +210,7 @@ export const newsHomeMock: NewsItem[] = [
       <h3>Engenharia a favor da transição energética</h3>
       <p>A SS&B reforça sua presença no setor de subestações e consolida sua contribuição para o avanço da matriz energética limpa no Piauí.</p>
     `,
-    image: imagem2,
+    image: ribeiro,
     publishedAt: '2025-11-21T00:00:00.000000Z',
     author: 'SS&B Comunicação',
     category: 'Subestação',
@@ -235,7 +241,7 @@ export const newsHomeMock: NewsItem[] = [
       <h3>SS&B: engenharia que impulsiona o futuro energético</h3>
       <p>A entrega da SE Cristino Castro reforça o compromisso da SS&B com obras de alta complexidade e com o desenvolvimento de infraestrutura essencial para a transição energética.</p>
     `,
-    image: imagem2,
+    image: secristino,
     publishedAt: '2025-11-20T00:00:00.000000Z',
     author: 'SS&B Comunicação',
     category: 'Subestação',
