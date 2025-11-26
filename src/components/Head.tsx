@@ -13,7 +13,8 @@ const navLinks = [
     name: 'Sobre',
     href: '#',
     dropdown: true,
-    options: [{ name: 'Quem somos', href: '/aboutUs' }],
+    options: [{ name: 'Quem somos', href: '/aboutUs' }, { name: 'Apresentação Institucional', href: '/public/nova-apresentacao.pdf' }],
+    
   },
   { name: 'Obras', href: '/obras' },
   { name: 'SGI', href: '/qsms' },
@@ -84,11 +85,19 @@ const NavItem = ({ name, href, dropdown, options }: NavItemProps) => {
                 key={index}
                 onClick={() => {
                   setIsOpen(false);
-                  if (option.href.startsWith('/')) {
-                    navigate(option.href);
-                  } else {
-                    window.location.href = option.href;
-                  }
+                   if (option.href.match(/\.(pdf|jpg|png|docx|xlsx)$/i)) {
+      window.open(option.href, '_blank'); // opens without reloading app
+      return;
+    }
+
+    // If internal app route
+    if (option.href.startsWith('/')) {
+      navigate(option.href);
+      return;
+    }
+
+    // External link
+    window.location.href = option.href;
                 }}
                 className="block w-full text-left px-4 hover:text-[#06A956] py-2 text-sm text-white transition duration-150 ease-in-out"
               >

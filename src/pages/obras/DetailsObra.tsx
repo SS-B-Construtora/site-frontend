@@ -47,7 +47,7 @@ const DetailsObra = () => {
       <SocialMediaSidebar />
       <main className="">
         <Head title="Obras - SS&B Construtora" />
-        <div className="min-h-screen bg-gray-50">
+        <div className="min-h-screen bg-gray-50 pt-[2em]">
           <div className="max-w-6xl mx-auto px-4 py-8">
             <div className="bg-[#06A956] px-6 py-4 rounded-lg mb-6 shadow-lg mt-10">
               <h1 className="text-4xl md:text-4xl font-bold text-white">

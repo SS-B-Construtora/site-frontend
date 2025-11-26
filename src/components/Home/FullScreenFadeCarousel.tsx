@@ -35,7 +35,7 @@ export default function FullScreenFadeCarousel({
     if (!emblaApi) return;
 
     // shorten autoplay to feel more natural
-    const interval = setInterval(() => emblaApi.scrollNext(), 4000);
+    const interval = setInterval(() => emblaApi.scrollNext(), 150000);
     const onSelect = () => setSelectedIndex(emblaApi.selectedScrollSnap());
     emblaApi.on('select', onSelect);
 

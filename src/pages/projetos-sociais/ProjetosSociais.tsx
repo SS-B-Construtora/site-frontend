@@ -50,7 +50,7 @@ export function ProjetosSociais() {
   return (
     <>
       <SocialMediaSidebar />
-      <main className="">
+      <main className="pt-[2em]">
         <Head title="Projetos Sociais - SS&B Construtora" />
 
         <div

@@ -47,78 +47,102 @@ function QSMS() {
 
         <div className="bg-[#E9F0F0] flex-grow mt-14">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex flex-col lg:flex-row min-h-[calc(100vh-72px)] lg:items-start">
-              <div className="w-full lg:w-1/2 flex items-start lg:items-center">
-                <div className="w-full max-w-[550px] space-y-6 py-12 lg:py-16 text-left">
+            <div className="">
+              <div className="w-full  flex items-start lg:items-center">
+                <div className="w-full space-y-6 py-12 lg:py-16 text-left">
                   <div className="space-y-3">
                     <h1 className="text-3xl lg:text-5xl font-bold text-[#06A956] leading-tight">
                       SGI
                     </h1>
                   </div>
 
-                  <div className="space-y-2 text-[#3F4141]">
+                  <div className="space-y-4 text-[#3F4141]">
                     <p className="text-[16px] leading-relaxed">
-                      A SS&amp;B Construtora possui um sistema de gestão que
-                      integra Qualidade, Meio Ambiente, Saúde e Segurança (SGI),
-                      sendo esse consolidado com a certificação ISO 9001:2008 e
-                      Siac/PBQP-H nível A.
+                      Sistema de Gestão Integrado (SGI): Excelência que Gera Resultados Reais
+Na SS&B Construtora, acreditamos que construir com qualidade vai além da entrega da obra. Por isso, implantamos e mantemos um Sistema de Gestão Integrado (SGI) certificado nas normas internacionais ISO 9001:2015, ISO 14001:2015 e ISO 45001:2018, que une Qualidade, Meio Ambiente, Saúde e Segurança em uma gestão sólida e em constante evolução.
                     </p>
 
                     <p className="text-[16px] leading-relaxed">
-                      A manutenção e monitoramento evolutivo desse sistema
-                      proporciona a SS&amp;B um vinculo de estímulo e apoio às
-                      boas práticas em suas obras e serviços, bem como um
-                      relacionamento mais estreito com seus clientes, parceiros
-                      e fornecedores, garantindo o desenvolvimento e a evolução
-                      de sua gestão competitiva no âmbito da engenharia,
-                      fomentando Ações sustentáveis e rentáveis e ações
-                      cooperativas que geram valor mútuo para toda cadeia
-                      envolvida.
-                    </p>
+                      Esse compromisso garante:
+                       </p>
+                         <p className="text-[16px] leading-relaxed">✅ Eficiência e produtividade em todas as etapas dos projetos;</p>
+                         <p className="text-[16px] leading-relaxed">✅ Sustentabilidade e responsabilidade socioambiental, preservando recursos e comunidades;</p>
+                         <p className="text-[16px] leading-relaxed">✅ Segurança e bem-estar dos colaboradores, clientes e parceiros;</p>
+                         <p className="text-[16px] leading-relaxed">✅ Transparência e confiança, fortalecendo relacionamentos de longo prazo.</p>
+                   
 
                     <p className="text-[16px] leading-relaxed">
-                      A empresa estimula ainda a integração, o compartilhamento
-                      e o direcionamento do Sistema Integrado em toda a
-                      organização, bem como a disseminação de ações de
-                      excelência que gerem resultados na sociedade. Para tal,
-                      patrocina Ações esportivas e de saúde/bem estar. Incentiva
-                      a capacitação profissional de seus colaboradores e
-                      participação nos lucros.
+                      Nosso SGI é mais que um sistema: é uma cultura organizacional que promove inovação, práticas sustentáveis e soluções de engenharia que realmente entregam valor agregado ao cliente e ao mercado.
                     </p>
 
-                    <p className="text-[16px] leading-relaxed">
-                      O Sistema QSMS está alicerçado sobre um conjunto de
-                      valores fundamentais e estruturado num planejamento
-                      Estratégico que expressa a compreensão da empresa sobre
-                      sua visão de Excelência.
-                    </p>
+                 
 
                     <div className="space-y-3 mt-8 lg:mt-12">
                       <h1 className="text-3xl lg:text-5xl font-bold text-[#06A956] leading-tight">
-                        Treinamento
+                        Treinamentos e Capacitação Contínua 
                       </h1>
                     </div>
 
                     <p className="text-[16px] leading-relaxed">
-                      Visando sempre a segurança e desenvolvimento de seus
-                      colaboradores, a SS&amp;B Construtora tem um trabalho
-                      constante de realizar treinamentos com suas equipes e
-                      mantê-los sempre capacitados para atuar em suas atividades
-                      da melhor forma e com o máximo de segurança.
+                      Acreditamos que obras seguras e de qualidade começam pelas pessoas.
+Por isso, investimos em treinamentos constantes, mantendo nossas equipes atualizadas e capacitadas para atuar com excelência técnica e máxima segurança.
                     </p>
+                    <div className="space-y-3 mt-8 lg:mt-12">
+                      <h1 className="text-3xl lg:text-5xl font-bold text-[#06A956] leading-tight">
+                        Corpo técnico
+                      </h1>
+                    </div>
+
+                    <p className="text-[16px] leading-relaxed">
+                        A SS&B Construtora conta com um corpo técnico multidisciplinar formado por equipe fixa (staff) altamente qualificada, que atua de forma integrada em todas as etapas dos projetos. Nossa estrutura reúne Engenheiros Civis, responsáveis pela precisão construtiva; Engenheiro Mecânico, que assegura a eficiência dos processos e equipamentos; Engenheiro de Qualidade, voltado para o cumprimento rigoroso das normas e padrões técnicos; Engenheira Ambiental e Sanitarista, que promove práticas sustentáveis e responsáveis; e Engenheiro de Segurança do Trabalho, comprometido com a integridade e o bem-estar de todos os envolvidos.
+
+Além da equipe de engenharia, dispomos de profissionais administrativos preparados e de uma linha de frente composta por Técnicos de Meio Ambiente e Técnicos de Segurança, que acompanham de perto a execução em campo, garantindo excelência e conformidade em cada atividade.
+
+Essa integração de competências dentro de um staff fixo assegura que a SS&B entregue soluções completas, seguras e sustentáveis, gerando valor agregado e fortalecendo a confiança de nossos clientes.  
+ </p>
+ <div className="space-y-3 mt-8 lg:mt-12">
+                      <h1 className="text-3xl lg:text-5xl font-bold text-[#06A956] leading-tight">
+                        Reconhecimento e Valorização
+                      </h1>
+                    </div>
+
+                    <p className="text-[16px] leading-relaxed">
+                       Na SS&B, reconhecemos que o capital humano é o maior patrimônio da empresa.
+Premiamos e valorizamos nossos colaboradores com base em critérios como:
+
+ </p>
+ <p>
+  Proatividade
+ </p>
+ <p>
+  Produção
+ </p>
+ <p>
+  Segurança
+ </p>
+ <p>
+  Qualidade
+</p>
+<p>
+  Meio Ambiente
+</p>
+
+ <p className="text-[16px] leading-relaxed">
+                      Essa cultura de reconhecimento motiva, gera engajamento e reflete diretamente em obras mais ágeis, seguras e sustentáveis.
+
+ </p>
+ <p className="text-[16px] leading-relaxed">Por que escolher a SS&B Construtora?</p>
+<p>✔ SGI certificado nas principais normas internacionais;</p>
+<p>✔ Equipes capacitadas e constantemente treinadas;</p>
+<p>✔ Compromisso com segurança, meio ambiente e qualidade;</p>
+<p>✔ Soluções que unem sustentabilidade e rentabilidade;</p>
+<p>✔ Relacionamentos sólidos baseados em confiança e resultados</p>
                   </div>
+                  
                 </div>
               </div>
 
-              <div className="w-full lg:w-1/2 h-64 lg:h-auto flex items-start lg:items-center justify-center lg:justify-end lg:pr-0 mt-8 lg:mt-0 lg:pt-12">
-                <div className="w-80 h-80 lg:w-full lg:h-[550px] lg:flex lg:justify-end">
-                  <img
-                    src={imagem}
-                    alt="História da SS&B Construtora"
-                    className="w-full h-full object-cover rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl lg:shadow-l-2xl"
-                  />
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -142,14 +166,14 @@ function QSMS() {
                     href={card.pdf}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors font-medium w-full text-center"
+                    className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700 transition-colors font-medium w-full text-center"
                   >
                     {card.button}
                   </a>
                   <a
                     href={card.pdf}
                     download
-                    className="bg-blue-100 text-blue-700 px-4 py-2 rounded hover:bg-blue-200 transition-colors font-medium w-full text-center"
+                    className="bg-blue-100 text-green-700 px-4 py-2 rounded hover:bg-blue-200 transition-colors font-medium w-full text-center"
                   >
                     Baixar PDF
                   </a>

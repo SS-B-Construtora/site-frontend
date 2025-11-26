@@ -178,7 +178,7 @@ function Obras() {
           </div>
         </div>
         <div className="bg-[#E9F0F0]">
-          <h1 className="text-[#3F4141] font-bold text-3xl lg:text-4xl text-center py-10 px-4 lg:px-0">
+          <h1 className="text-[#06A956] font-bold text-3xl lg:text-4xl text-center py-10 px-4 lg:px-0">
             Aqui você vê as{' '}
             <span className="font-bold text-[#06A956]">nossas obras!</span>
           </h1>

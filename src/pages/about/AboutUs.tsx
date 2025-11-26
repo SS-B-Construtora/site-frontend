@@ -4,7 +4,6 @@ import ContactSection from '@/components/Home/ContactSection';
 import PDFPreview from '@/components/PDFPreview';
 import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 
-import about from '@/assets/aboutUs/aboutus.svg';
 
 import about1 from '@/assets/aboutUs/about1.svg';
 import about2 from '@/assets/aboutUs/about2.svg';
@@ -64,9 +63,14 @@ export function AboutUs() {
 
               <div className="w-full lg:w-1/2 h-64 lg:h-auto flex items-center justify-center lg:justify-end lg:pr-0">
                 <div className="w-80 h-80 lg:w-full lg:h-[550px] lg:flex lg:justify-end">
-                  <img
-                    src={about}
-                    alt="História da SS&B Construtora"
+                  <video
+                    src='/video.mp4'
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      controls
+                    //alt="História da SS&B Construtora"
                     className="w-full h-full object-cover rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl lg:shadow-l-2xl"
                   />
                 </div>

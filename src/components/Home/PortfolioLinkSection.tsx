@@ -97,10 +97,10 @@ export default function PortfolioLinkSection() {
             </h2>
 
             <p className="mt-3 lg:mt-4 text-2xl sm:text-3xl lg:text-5xl font-semibold text-[#06A956] leading-tight">
-              Experiência <span className="text-[#3F4141]">em</span>
+              Experiência <span className="text-[#06A956]">em</span>
             </p>
 
-            <p className="font-bold text-2xl sm:text-3xl lg:text-5xl text-[#3F4141] leading-tight">
+            <p className="font-bold text-2xl sm:text-3xl lg:text-5xl text-[#06A956] leading-tight">
               grandes obras!
             </p>
           </div>
@@ -121,7 +121,7 @@ export default function PortfolioLinkSection() {
 
         <div className="w-full">
           <h3 className="text-2xl lg:text-3xl font-bold text-center text-[#3F4141] mb-8">
-            Nossos <span className="text-[#06A956]">Parceiros</span>
+            Nossos <span className="text-[#3F4141]">Parceiros</span>
           </h3>
 
           <div className="relative w-full overflow-hidden">

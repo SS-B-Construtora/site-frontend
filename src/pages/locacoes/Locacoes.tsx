@@ -39,7 +39,7 @@ function Locacoes() {
 
         <section className="py-8 md:py-16 bg-[#E9F0F0]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-[#3F4141] leading-tight text-left py-8 sm:py-12 lg:py-16">
+            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-[#06A956] leading-tight text-left py-8 sm:py-12 lg:py-16">
               Confira <span className="text-[#06A956]">nossas locações!</span>
             </h1>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 lg:grid-rows-4 gap-3 sm:gap-4 min-h-[600px] lg:h-[600px] xl:h-[700px]">

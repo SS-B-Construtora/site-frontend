@@ -10,7 +10,7 @@ function ContactSection() {
                 id="contact-heading"
                 className="text-4xl lg:text-4xl xl:text-5xl font-bold text-[#3F4141] leading-relaxed text-left"
               >
-                Ficou <span className="text-[#06A956]">interessado?</span>
+                Ficou <span className="text-[#3F4141]">interessado?</span>
               </h2>
               <p className="mt-4 text-2xl lg:text-2xl xl:text-3xl font-bold text-[#3F4141] leading-relaxed text-left">
                 Entre em contato conosco

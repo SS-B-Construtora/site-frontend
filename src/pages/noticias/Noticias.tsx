@@ -39,7 +39,7 @@ function Noticias() {
 
         <section className=" bg-[#E9F0F0]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-[#3F4141] leading-tight text-left py-8 sm:py-12 lg:py-16">
+            <h1 className="text-2xl sm:text-3xl lg:text-5xl font-bold text-[#3F4141] leading-tight text-left py-[2em]">
               <span className="text-[#06A956]">Notícias</span>
             </h1>
 
