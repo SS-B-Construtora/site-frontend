@@ -66,7 +66,7 @@ export function Home() {
       ),
       buttonText: 'QUERO CONHECER',
       buttonLink: '#portfolio',
-      secondButtonText: 'VEJA NOSSO CATALOGO',
+      secondButtonText: 'VEJA NOSSO CATÁLOGO',
       secondButtonLink: '#portfolio',
     },
     {
@@ -84,7 +84,7 @@ export function Home() {
       ),
       buttonText: 'QUERO CONHECER',
       buttonLink: '#portfolio',
-      secondButtonText: 'VEJA NOSSO CATALOGO',
+      secondButtonText: 'VEJA NOSSO CATÁLOGO',
       secondButtonLink: '#portfolio',
     },
     {
@@ -103,7 +103,7 @@ export function Home() {
       ),
       buttonText: 'QUERO CONHECER',
       buttonLink: '#portfolio',
-      secondButtonText: 'VEJA NOSSO CATALOGO',
+      secondButtonText: 'VEJA NOSSO CATÁLOGO',
       secondButtonLink: '#portfolio',
     },
   ];
