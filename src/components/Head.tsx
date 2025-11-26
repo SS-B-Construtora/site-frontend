@@ -14,7 +14,7 @@ const navLinks = [
     name: 'Sobre',
     href: '#',
     dropdown: true,
-    options: [{ name: 'Quem somos', href: '/aboutUs' }, { name: 'Apresentação Institucional', href: '/public/nova-apresentacao.pdf' }],
+    options: [{ name: 'Quem somos', href: '/aboutUs' }, { name: 'Apresentação Institucional', href: 'https://drive.google.com/file/d/122eIWKMOxWBXDU1OrmhoFsfF4PthtuXo/view' }],
     
   },
   { name: 'Obras', href: '/obras' },
