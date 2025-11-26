@@ -30,7 +30,7 @@ export function Home() {
           em cada projeto
         </span>
       ),
-      buttonText: 'CONHECA NOSSOS PROJETOS SOCIAIS',
+      buttonText: 'CONHEÇA NOSSOS PROJETOS SOCIAIS',
       buttonLink: '#projetos',
     },
     {
