@@ -88,9 +88,7 @@ function DetalhesNoticia() {
                 </h1>
 
                 <div className="prose max-w-none">
-                  <p className="text-[#3F4141]/80 text-lg leading-relaxed mb-6">
-                    {noticia.description}
-                  </p>
+                 
 
                   <div 
                     className="text-[#3F4141]/70 leading-relaxed space-y-4"
