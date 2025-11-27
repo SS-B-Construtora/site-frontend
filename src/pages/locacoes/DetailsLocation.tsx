@@ -78,7 +78,7 @@ function DetailsLocation() {
       <main className=" min-h-screen flex flex-col bg-[#E9F0F0]">
         <Head title={`${getTitulo()} - Locações - SS&B Construtora`} />
 
-        <section className="py-8 md:py-16 bg-[#E9F0F0]">
+        <section className="mt-[10em] bg-[#E9F0F0]">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="flex items-center gap-2 text-2xl lg:text-2xl font-bold text-[#3F4141] leading-tight text-left rounded-md p-2 bg-[#06A956] mb-4">
               {botao()}
@@ -112,10 +112,14 @@ function DetailsLocation() {
                       <p className="text-[#3F4141]/70 text-sm leading-relaxed mb-4 flex-1">
                         {equipamento.descricao}
                       </p>
-
-                      <button className="w-full text-[#06A956] rounded-lg font-bold flex items-center justify-center gap-2 hover:cursor-pointer border border-[#06A956] transition-colors duration-300 mt-auto">
+                        <a href="https://api.whatsapp.com/send?phone=558591524951&text=%60Olá%2C+vim+pelo+site+e+gostaria+de+contratar+o+serviço+de+locação." 
+                        
+                        target="_blank" rel="noopener noreferrer" className="mt-auto">
+                      <button className="w-full text-[#06A956] rounded-lg font-bold flex items-center justify-center gap-2 hover:cursor-pointer border border-[#06A956] transition-colors duration-300 mt-auto" >
+                      
                         Quero solicitar!
                       </button>
+                      </a>
                     </div>
                   </div>
                 ))}
