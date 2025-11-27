@@ -13,7 +13,7 @@ const cardData = [
     description:
       'Conheça o documento que orienta o comportamento ético e profissional da nossa empresa.',
     logo: '⚖️',
-    pdf: codigo,
+    pdf: "https://drive.google.com/file/d/1gZo-Lr9A_YG4lpcUSr1LDkibeLkIcZCT/view?usp=drive_link",
     button: 'Visualizar PDF',
   },
   {
@@ -21,7 +21,7 @@ const cardData = [
     description:
       'Saiba como funciona a gestão interna e os processos administrativos da empresa.',
     logo: '⚙️',
-    pdf: gestao,
+    pdf: "https://drive.google.com/file/d/10mRRXoODoLIgktUPWbaNOpDuny2ECrHA/view?usp=drive_link",
     button: 'Visualizar PDF',
   },
   {
@@ -29,7 +29,7 @@ const cardData = [
     description:
       'Confira o manual completo de gestão para colaboradores e gestores.',
     logo: '📢',
-    pdf: manual,
+    pdf: 'https://drive.google.com/file/d/1fy9gFHLkwL7-Qn8m2Yw4tfFoQ4sNiUej/view?usp=drive_link',
     button: 'Visualizar PDF',
   },
   {
@@ -37,7 +37,7 @@ const cardData = [
     description:
       'Veja as diretrizes de compliance que garantem integridade e transparência.',
     logo:'📑',
-    pdf: compliance,
+    pdf: 'https://drive.google.com/file/d/1FZezV60Zo_koxMBftxVfQoH8_3N5BZC0/view?usp=drive_link',
     button: 'Visualizar PDF',
   },
 ];
