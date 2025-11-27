@@ -2,6 +2,10 @@ import { Head } from '@/components/Head';
 import SocialMediaSidebar from '@/components/SocialMediaSidebar';
 import FooterSection from '@/components/Home/FooterSection';
 import imagem from '@/assets/qsms/qsms.svg';
+import codigo from '@/assets/politicas/codigoDeEtica.pdf';
+import gestao from '@/assets/politicas/gestaoInterna.pdf';
+import manual from '@/assets/politicas/manualDeGestao.pdf';
+import compliance from '@/assets/politicas/politicaDeCompilance.pdf';
 
 const cardData = [
   {
@@ -9,7 +13,7 @@ const cardData = [
     description:
       'Conheça o documento que orienta o comportamento ético e profissional da nossa empresa.',
     logo: '⚖️',
-    pdf: '/politicas/codigoDeEtica.pdf',
+    pdf: codigo,
     button: 'Visualizar PDF',
   },
   {
@@ -17,7 +21,7 @@ const cardData = [
     description:
       'Saiba como funciona a gestão interna e os processos administrativos da empresa.',
     logo: '⚙️',
-    pdf: '/politicas/gestaoInterna.pdf',
+    pdf: gestao,
     button: 'Visualizar PDF',
   },
   {
@@ -25,7 +29,7 @@ const cardData = [
     description:
       'Confira o manual completo de gestão para colaboradores e gestores.',
     logo: '📢',
-    pdf: '/politicas/manualDeGestao.pdf',
+    pdf: manual,
     button: 'Visualizar PDF',
   },
   {
@@ -33,7 +37,7 @@ const cardData = [
     description:
       'Veja as diretrizes de compliance que garantem integridade e transparência.',
     logo:'📑',
-    pdf: '/politicas/politicaDeCompilance.pdf',
+    pdf: compliance,
     button: 'Visualizar PDF',
   },
 ];
